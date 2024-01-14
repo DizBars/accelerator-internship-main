@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship programs</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/Manrope-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header data-test="hero">
+    <h1 class="visually-hidden">Internship programs</h1>
+    <div class="header">
+      <div class="header__wrapper">
+        <svg width="52" height="52" role="img" data-header="logo">
+          <use href="__spritemap#sprite-logotype"></use>
+        </svg>
+        <nav class="header__nav header__nav--closed">
+          <button class="header__nav-toggle js-toggle-button" type="button">
+            Меню
+            <svg width="26" height="26" data-toggle="is-closed" role="img">
+              <use href="__spritemap#sprite-menu"></use>
+            </svg>
+            <svg width="26" height="26" data-toggle="is-opened" style="display: none;" role="img">
+              <use href="__spritemap#sprite-cross"></use>
+            </svg>
+          </button>
+          <ul class="header__nav-list">
+            <li>
+              <button type="button" data-nav="about">о проекте</button>
+            </li>
+            <li class="accordion__element" data-accordion="element">
+              <button class="accordion__button" type="button" data-accordion="buttton" data-nav="programs">Программы
+                <svg width="12" height="12" role="img">
+                  <use href="__spritemap#sprite-arrow-down"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <button>Стажировки</button>
+                  <button>Волонтерство</button>
+                  <button>Учёба</button>
+                  <button>Религия</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" data-nav="to-go">как поехать</button>
+            </li>
+            <li>
+              <button type="button" data-nav="reviews">отзывы</button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <button>Общее</button>
+                  <button>Волонтерство</button>
+                  <button>Стажировки</button>
+                  <button>Карьера</button>
+                  <button>Путешествия</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button type="button" data-nav="news">новости</button>
+            </li>
+            <li>
+              <button type="button" data-nav="contacts">контакты</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="hero__swiper swiper">
+      <ul class="hero__list swiper-wrapper">
+        <li class="hero__ratio-wrapper swiper-slide">
+          <div class="hero__background">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-1.webp 1x, img/mobile/header-mobile-1@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-1.png 1x, img/mobile/header-mobile-1@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-1.webp 1x, img/tablet/header-tablet-1@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-1.png 1x, img/tablet/header-tablet-1@2x.png 2x">
+              <source type="image/webp" srcset="img/desktop/header-desktop-1.webp 1x, img/desktop/header-desktop-1@2x.webp  2x">
+              <img src="img/desktop/header-desktop-1.png" width="1440" height="800" srcset="img/desktop/header-desktop-1@2x.png 2x"
+                alt="Women.">
+            </picture>
+          </div>
+          <div class="hero__item">
+            <h2>
+              Глобальный профессиональныйопыт обучения за рубежом
+            </h2>
+            <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+            <button class="hero__button button button--primary" type="button">Подробнее</button>
+          </div>
+        </li>
+        <li class="hero__ratio-wrapper swiper-slide">
+          <div class="hero__background">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-2.webp 1x, img/mobile/header-mobile-2@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-2.png 1x, img/mobile/header-mobile-2@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-2.webp 1x, img/tablet/header-tablet-2@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-2.png 1x, img/tablet/header-tablet-2@2x.png 2x">
+              <source type="image/webp" srcset="img/desktop/header-desktop-2.webp 1x, img/desktop/header-desktop-2@2x.webp  2x">
+              <img src="img/desktop/header-desktop-2.png" width="1440" height="800" srcset="img/desktop/header-desktop-2@2x.png 2x"
+                alt="Women.">
+            </picture>
+          </div>
+          <div class="hero__item">
+            <h2>
+              Волонтёрские программы – внесите свой вклад в общество
+            </h2>
+            <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+            <button class="hero__button button button--primary" type="button">Подробнее</button>
+          </div>
+        </li>
+        <li class="hero__ratio-wrapper swiper-slide">
+          <div class="hero__background">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-3.webp 1x, img/mobile/header-mobile-3@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/header-mobile-3.png 1x, img/mobile/header-mobile-3@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-3.webp 1x, img/tablet/header-tablet-3@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/header-tablet-3.png 1x, img/tablet/header-tablet-3@2x.png 2x">
+              <source type="image/webp" srcset="img/desktop/header-desktop-3.webp 1x, img/desktop/header-desktop-3@2x.webp  2x">
+              <img src="img/desktop/header-desktop-3.png" width="1440" height="800" srcset="img/desktop/header-desktop-3@2x.png 2x"
+                alt="Women.">
+            </picture>
+          </div>
+          <div class="hero__item">
+            <h2>
+              Программы стажировок в крупнейших компаниях мира
+            </h2>
+            <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+            <button class="hero__button button button--primary" type="button">Подробнее</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

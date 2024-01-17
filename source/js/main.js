@@ -1,5 +1,12 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import './utils/scroll-lock';
+import './utils/focus-lock';
+import {initAccordions} from './modules/init-accordion';
+import {initSliderHero} from './modules/init-slider';
+
+window.addEventListener('DOMContentLoaded', () => {
+  initSliderHero();
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+});
 

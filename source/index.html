@@ -32,47 +32,64 @@
               <use href="__spritemap#sprite-cross"></use>
             </svg>
           </button>
-          <ul class="header__nav-list">
+          <div>
+          <ul class="header__nav-list" data-accordion="parent">
             <li>
               <button type="button" data-nav="about">о проекте</button>
             </li>
             <li class="accordion__element" data-accordion="element">
-              <button class="accordion__button" type="button" data-accordion="buttton" data-nav="programs">Программы
+              <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Программы
                 <svg width="12" height="12" role="img">
                   <use href="__spritemap#sprite-arrow-down"></use>
                 </svg>
               </button>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <button>Стажировки</button>
-                  <button>Волонтерство</button>
-                  <button>Учёба</button>
-                  <button>Религия</button>
-                </div>
-              </div>
+              <ul class="site-nav__nested-list" data-accordion="content">
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Стажировки</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Волонтерство</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Учёба</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Религия</button>
+                </li>
+              </ul>
             </li>
             <li>
               <button type="button" data-nav="to-go">как поехать</button>
             </li>
             <li>
               <button type="button" data-nav="reviews">отзывы</button>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <button>Общее</button>
-                  <button>Волонтерство</button>
-                  <button>Стажировки</button>
-                  <button>Карьера</button>
-                  <button>Путешествия</button>
-                </div>
-              </div>
             </li>
-            <li>
-              <button type="button" data-nav="news">новости</button>
+            <li class="accordion__element" data-accordion="element">
+              <button class="accordion__button btn btn--aquamarine" type="button"
+                data-accordion="button">новости</button>
+              <ul class="site-nav__nested-list" data-accordion="content">
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Общее</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Волонтерство</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Стажировки</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Карьера</button>
+                </li>
+                <li class="site-nav__item">
+                  <button class="site-nav__link">Путешествия</button>
+                </li>
+              </ul>
             </li>
             <li>
               <button type="button" data-nav="contacts">контакты</button>
             </li>
           </ul>
+        </div>
         </nav>
       </div>
     </div>
@@ -167,7 +184,7 @@
           </div>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="hero__swiper-pagination"></div>
     </div>
   </header>
   <main>
@@ -328,7 +345,7 @@
           </li>
         </ul>
       </div>
-      <div class="swiper-button-prev programs__button programs__button--prev">
+      <!-- <div class="swiper-button-prev programs__button programs__button--prev">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
@@ -337,7 +354,7 @@
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
-      </div>
+       </div> -->
       <div class="swiper-scrollbar  programs__scrollbar"></div>
     </section>
     <section class="grant">
@@ -501,7 +518,7 @@
         </ul>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-button-prev news__button news__button--prev">
+      <!-- <div class="swiper-button-prev news__button news__button--prev">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
@@ -510,32 +527,32 @@
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
-      </div>
+      </div>-->
     </section>
     <section class="faq">
-      <div class="accordion__element" data-accordion="element">
-        <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-          data-accordion="button">Кто организатор? Какие сроки у программы?</button>
-        <div class="accordion__content" data-accordion="content">
-          <div class="accordion__wrapper">
-            <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
-              «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
-              личного участия.</p>
+      <div class="accordion" data-accordion="parent">
+        <div class="accordion__element" data-accordion="element">
+          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+            data-accordion="button">Кто организатор? Какие сроки у программы?</button>
+          <div class="accordion__content" data-accordion="content">
+            <div class="accordion__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+                «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
+                личного участия.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion__element" data-accordion="element">
-        <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-          data-accordion="button">Что такое грант на обучение?</button>
-        <div class="accordion__content" data-accordion="content">
-          <div class="accordion__wrapper">
-            <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
-              «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
-              личного участия.</p>
+        <div class="accordion__element" data-accordion="element">
+          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+            data-accordion="button">Что такое грант на обучение?</button>
+          <div class="accordion__content" data-accordion="content">
+            <div class="accordion__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+                «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
+                личного участия.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion" data-accordion="parent" data-single="">
         <div class="accordion__element is-active" data-accordion="element">
           <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Как определяется
             стоимость программы?</button>
@@ -669,95 +686,95 @@
     </section>
     <section class="feedback">
       <div class="feedback__wrapper">
-      <h2>Напишите нам</h2>
-      <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-      <div data-form-validate data-callback="base">
-        <form method="post" action="https://echo.htmlacademy.ru" novalidate>
-          <div class="form form__wrapper">
-            <div class="custom-input" data-validate-type="text" data-limitation="name"
-              data-message-base="Поле обязательно к заполнению"
-              data-message-extra="Проверьте корректность заполнения поля" data-required="#">
-              <label>
-                <span class="custom-textarea__label">Имя</span>
-                <input type="text" name="user-name" aria-invalid="false">
-              </label>
-            </div>
-            <div class="custom-input" data-validate-type="phone" data-on-input-validate="#"
-              data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность ввода"
-              data-message-success="Поле заполнено верно" data-required="#" data-phone-length="18">
-              <label>
-                <span class="custom-textarea__label">телефон</span>
-                <input type="tel" name="user-phone" aria-invalid="false">
-              </label>
-            </div>
-            <div class="custom-textarea" data-validate-type="text">
-              <label>
-                <span class="custom-textarea__label">Ваше сообщение</span>
-                <textarea name="user-info" class=""></textarea>
-              </label>
-            </div>
-            <div class="custom-select" data-select="" data-validate-type="select" data-name="some-name"
-              data-id="id-example-2" data-message-base="Поле обязательно к заполнению">
-              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
-                  class="custom-select__text"></span><span class="custom-select__icon"></span></button>
-              <ul class="custom-select__list" role="listbox">
-                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false"
-                  role="option">Великий Новгород</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
-                  role="option">Москва</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
-                  role="option">Санкт-Петербург</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false"
-                  role="option">Сочи</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false"
-                  role="option">Псков</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false"
-                  role="option">Домбай</li>
-              </ul>
-              <select id="id-example-2" name="some-name" tabindex="-1" aria-hidden="true">
-                <option value=""></option>
-                <option value="id-1">Великий Новгород</option>
-                <option value="id-2">Москва</option>
-                <option value="id-3">Санкт-Петербург</option>
-                <option value="id-4">Сочи</option>
-                <option value="id-5">Псков</option>
-                <option value="id-6">Домбай</option>
-              </select>
-            </div>
-            <div class="toggle-group" data-validate-type="toggle-group"
-              data-message-base="Поле обязательно к заполнению">
-              <div class="custom-toggle custom-toggle--checkbox">
+        <h2>Напишите нам</h2>
+        <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        <div data-form-validate data-callback="base">
+          <form method="post" action="https://echo.htmlacademy.ru" novalidate>
+            <div class="form form__wrapper">
+              <div class="custom-input" data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-required="#">
                 <label>
-                  <input type="checkbox" value="user-agreement-1" name="user-agreement"><span
-                    class="custom-toggle__icon"></span><span class="custom-toggle__label">Я согласен на обработку моих персональных данных</span>
+                  <span class="custom-textarea__label">Имя</span>
+                  <input type="text" name="user-name" aria-invalid="false">
                 </label>
               </div>
+              <div class="custom-input" data-validate-type="phone" data-on-input-validate="#"
+                data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность ввода"
+                data-message-success="Поле заполнено верно" data-required="#" data-phone-length="18">
+                <label>
+                  <span class="custom-textarea__label">телефон</span>
+                  <input type="tel" name="user-phone" aria-invalid="false">
+                </label>
+              </div>
+              <div class="custom-textarea" data-validate-type="text">
+                <label>
+                  <span class="custom-textarea__label">Ваше сообщение</span>
+                  <textarea name="user-info" class=""></textarea>
+                </label>
+              </div>
+              <div class="custom-select" data-select="" data-validate-type="select" data-name="some-name"
+                data-id="id-example-2" data-message-base="Поле обязательно к заполнению">
+                <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                    class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false"
+                    role="option">Великий Новгород</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                    role="option">Москва</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                    role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false"
+                    role="option">Сочи</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false"
+                    role="option">Псков</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false"
+                    role="option">Домбай</li>
+                </ul>
+                <select id="id-example-2" name="some-name" tabindex="-1" aria-hidden="true">
+                  <option value=""></option>
+                  <option value="id-1">Великий Новгород</option>
+                  <option value="id-2">Москва</option>
+                  <option value="id-3">Санкт-Петербург</option>
+                  <option value="id-4">Сочи</option>
+                  <option value="id-5">Псков</option>
+                  <option value="id-6">Домбай</option>
+                </select>
+              </div>
+              <div class="toggle-group" data-validate-type="toggle-group"
+                data-message-base="Поле обязательно к заполнению">
+                <div class="custom-toggle custom-toggle--checkbox">
+                  <label>
+                    <input type="checkbox" value="user-agreement-1" name="user-agreement"><span
+                      class="custom-toggle__icon"></span><span class="custom-toggle__label">Я согласен на обработку моих
+                      персональных данных</span>
+                  </label>
+                </div>
+              </div>
+              <button class="button button--primary form__button" type="submit">Отправить
+                <svg width="10" height="10" role="img">
+                  <use href="__spritemap#sprite-arrow"></use>
+                </svg>
+              </button>
             </div>
-            <button class="button button--primary form__button" type="submit">Отправить
-              <svg width="10" height="10" role="img">
-                <use href="__spritemap#sprite-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="feedback__image">
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)"
-          srcset="img/mobile/form-mobile.webp 1x, img/mobile/form-mobile@2x.webp 2x">
-        <source type="image/png" media="(max-width: 767px)"
-          srcset="img/mobile/form-mobile.png 1x, img/mobile/form-mobile@2x.png 2x">
-        <source type="image/webp" media="(max-width: 1439px)"
-          srcset="img/tablet/form-tablet.webp 1x, img/tablet/form-tablet@2x.webp 2x">
-        <source type="image/png" media="(max-width: 1439px)"
-          srcset="img/tablet/form-tablet.png 1x, img/tablet/form-tablet@2x.png 2x">
-        <source type="image/webp"
-          srcset="img/desktop/form-desktop.webp 1x, img/desktop/form-desktop@2x.webp  2x">
-        <img src="img/desktop/form-desktop.png" width="392" height="400"
-          srcset="img/desktop/form-desktop@2x.png 2x" alt="Women.">
-      </picture>
-    </div>
+      <div class="feedback__image">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/mobile/form-mobile.webp 1x, img/mobile/form-mobile@2x.webp 2x">
+          <source type="image/png" media="(max-width: 767px)"
+            srcset="img/mobile/form-mobile.png 1x, img/mobile/form-mobile@2x.png 2x">
+          <source type="image/webp" media="(max-width: 1439px)"
+            srcset="img/tablet/form-tablet.webp 1x, img/tablet/form-tablet@2x.webp 2x">
+          <source type="image/png" media="(max-width: 1439px)"
+            srcset="img/tablet/form-tablet.png 1x, img/tablet/form-tablet@2x.png 2x">
+          <source type="image/webp" srcset="img/desktop/form-desktop.webp 1x, img/desktop/form-desktop@2x.webp  2x">
+          <img src="img/desktop/form-desktop.png" width="392" height="400" srcset="img/desktop/form-desktop@2x.png 2x"
+            alt="Women.">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="footer">

@@ -1,0 +1,9 @@
+.header {
+  position: absolute;
+  z-index: 2;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+}

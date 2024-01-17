@@ -1,4 +1,17 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "vendor/swiper";
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "blocks/custom-input";
+@import "blocks/accordion";
+@import "blocks/custom-select";
+@import "blocks/custom-toggle";
+@import "blocks/data-accordion";
+@import "blocks/toggle-group";
+@import "blocks/header";
+@import "blocks/hero";
+

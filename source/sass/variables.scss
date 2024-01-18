@@ -10,7 +10,7 @@ $fz-default: 16px;
 $ff-rouble: "Rouble", "Arial", sans-serif;
 $ff-placeholder: "Manrope", "Arial", sans-serif;
 $tf-default: ease;
-$trans-default: 0.3s $tf-default;
+$trans-default: all 0.3s $tf-default;
 $trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 $trans-600: 0.6s $tf-default;
 $vp-768: 768px;

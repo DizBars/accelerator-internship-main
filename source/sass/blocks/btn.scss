@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0 22px 0 30px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $color-cerulean-blue;
+  background: $color-default-white;
+  border: 1px solid #316DC2;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity $trans-default;
+  height: 54px;
+  width: 196px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.button--primary::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $color-cerulean-blue;
+  right: 3px;
+  z-index: -1;
+}
+
+

@@ -1,9 +1,121 @@
 .header {
   position: absolute;
   z-index: 2;
+  padding: 30px 100px;
+  width: 100%;
 }
 
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+svg[data-toggle="is-closed"] {
+  stroke: $color-default-white;
+}
+
+.js-toggle-button__wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-cerulean-blue;
+  text-transform: uppercase;
+  transition: $trans-default;
+}
+
+.header__nav-toggle {
+  display: flex;
+  align-items: center;
+  padding: 4px 4px 4px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $color-cerulean-blue;
+  background: $color-default-white;
+  border: 1px solid #316DC2;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s;
+  text-transform: uppercase;
+  width: 134px;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.header__nav-list {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  background-color: $color-cerulean-blue;
+  border-radius: 16px;
+  margin: 0;
+  padding: 33px 25px;
+  transition: $trans-default;
+  gap: 24px;
+}
+
+.header__nav-button {
+  border: none;
+  background-color: transparent;
+  color: $color-default-white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 0;
+  opacity: 0.7;
+  transition: $trans-default;
+  letter-spacing: -0.02em;
+  display: flex;
+  gap: 10px;
+
+  @include active {
+    opacity: 1;
+  }
+}
+
+.header__nav__nested-button {
+  border: none;
+  background-color: transparent;
+  color: $color-default-white;
+  font-size: 16px;
+  font-weight: 16px;
+  padding: 0;
+  opacity: 0.7;
+  letter-spacing: -0.02em;
+
+  @include active {
+    opacity: 1;
+  }
+}
+
+.header__nav__nested-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  list-style: none;
+  transition: $trans-default;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-list__item.is-active .header__nav-button {
+  margin-bottom: 12px;
+}
+
+.nav-list__item.is-active {
+  margin-bottom: -4px;
+}
+
+.header__nav-button svg {
+  stroke: $color-default-white;
+}
+
+.nav-list__item.is-active svg {
+  transform: rotate(0.5turn);
 }

@@ -1,7 +1,7 @@
 .button {
   display: flex;
   align-items: center;
-  padding: 0 22px 0 30px;
+  padding: 0 21px 0 29px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -13,10 +13,12 @@
   text-transform: uppercase;
   transition: opacity $trans-default;
   height: 54px;
-  width: 196px;
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  gap: 48px;
+  width: max-content;
+  letter-spacing: 0.02em;
 }
 
 .button--primary::after {

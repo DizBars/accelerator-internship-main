@@ -1,0 +1,146 @@
+.about {
+  padding: 118px 100px 0;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 159px;
+  margin-bottom: 60px;
+}
+
+.about__main {
+  display: flex;
+  flex-direction: column;
+  width: 477px;
+}
+
+.about__main h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color-cerulean-blue;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.about__main p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $color-charcoal;
+  margin: 0;
+}
+
+.about__target {
+  display: flex;
+  flex-direction: column;
+  width: 498px;
+}
+
+.about__target h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $color-cerulean-blue;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.about__target p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-charcoal;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.about__button svg {
+  stroke: $color-default-white;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 54px 52px;
+  list-style: none;
+  background-color: $color-cerulean-blue;
+  border-radius: 20px;
+  margin: 0;
+  padding: 72px 106px 12px 126px;
+  z-index: 1;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__item-star {
+  z-index: 2;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: $color-cerulean-blue;
+  left: -20px;
+  top: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__item-star svg {
+  fill: $color-default-white;
+}
+
+.about__text {
+  padding: 25px 60px 0 59px;
+  border: 1px solid $color-alabaster;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.about__programs {
+  min-height: 152px;
+  gap: 36px;
+}
+
+.about__participants {
+  min-height: 152px;
+  gap: 24px;
+}
+
+.about__grant {
+  min-height: 132px;
+  padding: 25px 35px 0 53px;
+  gap: 9px;
+}
+
+.about__countries {
+  min-height: 132px;
+  gap: 15px;
+}
+
+.about__text h4 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: $color-default-white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 4px;
+  max-width: 171px;
+}
+
+.about__text p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: $color-alabaster;
+  margin: 0;
+  max-width: 190px;
+}

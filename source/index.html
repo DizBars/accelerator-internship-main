@@ -275,12 +275,14 @@
       </div>
     </section>
     <section class="programs">
+      <div class="programs__wrapper">
       <h2>Программы</h2>
-      <button class="programs__button"> Все программы
+      <button class="programs__button button button--primary"> Все программы
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
       </button>
+    </div>
       <div class="programs__swiper swiper">
         <ul class="programs__list swiper-wrapper">
           <li class="programs__ratio-wrapper swiper-slide">
@@ -300,10 +302,37 @@
             </picture>
             <div class="programs__item">
               <h3>Стажировки</h3>
-              <div>
+              <div class="programs__item-lower">
                 <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                 <button class="programs__button">
-                  <svg width="10" height="10" role="img">
+                  <svg width="8" height="8" role="img">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="programs__ratio-wrapper swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/programs-mobile-3.webp 1x, img/mobile/programs-mobile-3@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/programs-mobile-3.png 1x, img/mobile/programs-mobile-3@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/programs-tablet-3.webp 1x, img/tablet/programs-tablet-3@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/programs-tablet-3.png 1x, img/tablet/programs-tablet-3@2x.png 2x">
+              <source type="image/webp"
+                srcset="img/desktop/programs-desktop-3.webp 1x, img/desktop/programs-desktop-3@2x.webp  2x">
+              <img src="img/desktop/programs-desktop-3.png" width="392" height="400"
+                srcset="img/desktop/programs-desktop-3@2x.png 2x" alt="Women.">
+            </picture>
+            <div class="programs__item">
+              <h3>Волонтёрство</h3>
+              <div class="programs__item-lower">
+                <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                <button class="programs__button">
+                  <svg width="8" height="8" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </button>
@@ -326,11 +355,11 @@
                 srcset="img/desktop/programs-desktop-2@2x.png 2x" alt="Women.">
             </picture>
             <div class="programs__item">
-              <h3>Волонтерство</h3>
-              <div>
-                <p>Помогайте другим и развивайте свои лидерские качества.</p>
+              <h3>Учёба</h3>
+              <div class="programs__item-lower">
+                <p>Получите образование и измените своё будущее.</p>
                 <button class="programs__button">
-                  <svg width="10" height="10" role="img">
+                  <svg width="8" height="8" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </button>
@@ -354,10 +383,10 @@
             </picture>
             <div class="programs__item">
               <h3>Учёба</h3>
-              <div>
+              <div class="programs__item-lower">
                 <p>Получите образование и измените своё будущее.</p>
                 <button class="programs__button">
-                  <svg width="10" height="10" role="img">
+                  <svg width="8" height="8" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </button>
@@ -366,17 +395,17 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="swiper-button-prev programs__button programs__button--prev">
+      <div class="swiper-button swiper-button-prev programs__button programs__button--prev">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
       </div>
-      <div class="swiper-button-next programs__button programs__button--next">
+      <div class="swiper-button swiper-button-next programs__button programs__button--next">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
-       </div> -->
-      <div class="swiper-scrollbar  programs__scrollbar"></div>
+       </div>
+      <div class="swiper-scrollbar programs__scrollbar"></div>
     </section>
     <section class="grant">
       <div class="grant__to-go">

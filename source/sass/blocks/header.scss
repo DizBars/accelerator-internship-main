@@ -112,10 +112,6 @@ svg[data-toggle="is-closed"] {
   margin-bottom: -4px;
 }
 
-.header__nav-button svg {
-  stroke: $color-default-white;
-}
-
 .nav-list__item.is-active svg {
   transform: rotate(0.5turn);
 }

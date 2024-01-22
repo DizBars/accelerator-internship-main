@@ -1,0 +1,118 @@
+.faq {
+  color: $color-cerulean-blue;
+  padding: 120px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 67px;
+}
+
+.faq__accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1028px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.faq__button {
+  border: none;
+  background-color: transparent;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  color: $color-cerulean-blue;
+  text-align: start;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 948px;
+}
+
+.faq__button svg {
+  position: absolute;
+  right: 49px;
+  top: 49px;
+  z-index: 3;
+}
+
+.faq__element {
+  padding: 42px 39px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 16px;
+  position: relative;
+  min-height: 120px;
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: $color-cerulean-blue;
+    position: absolute;
+    border-radius: 50%;
+    right: 39px;
+    top: 39px;
+  }
+}
+
+.faq__element--fat {
+  padding: 32px 39px;
+}
+
+.faq__element.is-active {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+  padding: 42px 39px 32px;
+
+  &::after {
+    content: "";
+    background-color: $color-default-white;
+  }
+}
+
+.faq__element [data-faq-toggle="is-opened"] {
+  display: none;
+}
+
+.faq__element.is-active [data-faq-toggle="is-opened"] {
+  display: block;
+}
+
+.faq__element [data-faq-toggle="is-closed"] {
+  display: block;
+}
+
+.faq__element.is-active [data-faq-toggle="is-closed"] {
+  display: none;
+}
+
+.faq__element.is-active .faq__button {
+  color: $color-default-white;
+  margin-bottom: 16px;
+}
+
+.faq__toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-cerulean-blue;
+}
+
+.faq__wrapper p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 690px;
+}

@@ -1,0 +1,155 @@
+.reviews {
+  padding: 0 100px 182px;
+  position: relative;
+}
+
+.reviews h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  color: $color-cerulean-blue;
+  margin-bottom: 46px;
+  margin-top: 4px;
+  padding-left: 3px;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__ratio-wrapper {
+  padding: 49px 49px 30px 49px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 16px;
+  min-height: 456px;
+}
+
+.reviews__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.reviews__person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.reviews__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 23px;
+}
+
+.reviews__person h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-cerulean-blue;
+  margin: 0;
+}
+
+.reviews__details h4 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  color: $color-cerulean-blue;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.reviews__details p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: $color-charcoal;
+  margin: 0;
+}
+
+.reviews__program {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__item h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-cerulean-blue;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.reviews__item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-charcoal;
+  margin: 0;
+}
+
+.reviews__button--prev::after {
+  display: none;
+}
+
+.reviews__button--prev svg {
+  transform: rotate(-135deg);
+}
+
+.reviews__button--next svg {
+  transform: rotate(45deg);
+}
+
+.reviews__button--prev {
+  width: 22px;
+  height: 22px;
+  left: auto;
+  right: 132px;
+  top: 614px;
+}
+
+.reviews__button--next {
+  width: 22px;
+  height: 22px;
+  left: auto;
+  right: 100px;
+  top: 614px;
+}
+
+.reviews__button--next::after {
+  display: none;
+}
+
+.reviews__scrollbar.swiper-scrollbar-horizontal {
+  max-width: 1134px;
+  height: 2px;
+  background: rgb(49, 109, 194, 0.2);
+  left: 7%;
+  bottom: 131px;
+}
+
+.reviews__scrollbar .swiper-scrollbar-drag {
+  background: rgb(49, 109, 194, 1);
+}
+
+.reviews__button svg {
+  stroke: $color-cerulean-blue;
+  width: 8px;
+  height: 8px;
+}

@@ -1,5 +1,5 @@
 .programs {
-  padding: 120px 100px 0;
+  padding: 120px 100px 166px;
   position: relative;
 }
 
@@ -52,12 +52,16 @@
   left: auto;
   right: 132px;
   top: 702px;
+  width: 22px;
+  height: 22px;
 }
 
 .programs__button--next {
   left: auto;
   right: 100px;
   top: 702px;
+  width: 22px;
+  height: 22px;
 }
 
 .programs__button--next::after {
@@ -74,7 +78,7 @@
   height: 2px;
   background: rgb(49, 109, 194, 0.2);
   left: 7%;
-  bottom: -35px;
+  bottom: 131px;
 }
 
 .programs__scrollbar .swiper-scrollbar-drag {

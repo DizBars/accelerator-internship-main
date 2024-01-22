@@ -1,0 +1,272 @@
+.news {
+  padding: 124px 100px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.news h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  color: $color-cerulean-blue;
+  margin-bottom: 46px;
+}
+
+.news__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.news__nav-button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: $color-cerulean-blue;
+  background-color: transparent;
+  padding: 11px 25px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  border: none;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.news__nav-button.is-active {
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 20px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.news__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 1240px;;
+}
+
+.news__ratio-wrapper {
+  position: relative;
+  min-width: 286px;
+  width: auto;
+}
+
+.news__item {
+  position: absolute;
+  bottom: 0;
+}
+
+.news__ratio-wrapper--narrow .news__item {
+  bottom: 0;
+}
+
+.news__item span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  color: $color-cerulean-blue;
+  background-color: $color-alabaster;
+  margin: 0;
+  border-radius: 0 12px 0 0;
+  display: block;
+  width: min-content;
+  padding: 11px 12px 4px 0;
+
+  @include angle;
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      top: 11px;
+      background-color: $color-alabaster;
+    }
+}
+
+span.news__angle {
+  background-color: transparent;
+
+  @include angle;
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: -1px;
+      background-color: $color-alabaster;
+    }
+}
+
+.news__item h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-cerulean-blue;
+  background-color: $color-alabaster;
+  margin: 0;
+  border-radius: 0 12px 0 0;
+  padding: 13px 0 2px;
+
+  @include angle;
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      top: 51px;
+      background-color: $color-alabaster;
+    }
+}
+
+.news__ratio-wrapper--narrow h3 {
+  padding: 5px 0 0;
+
+  @include angle;
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      top: 41px;
+      background-color: $color-alabaster;
+    }
+}
+
+.news__ratio-wrapper--wide .news__item h3 {
+  width: 291px;
+}
+
+.news__ratio-wrapper--narrow .news__item h3 {
+  width: 214px;
+}
+
+.news__item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-charcoal;
+  margin: 0;
+}
+
+.news__ratio-wrapper--wide .news__description {
+  width: 389px;
+}
+
+.news__ratio-wrapper--narrow .news__description {
+  width: 240px;
+}
+
+.news__description {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-alabaster;
+  align-items: center;
+  padding: 9px 0 12px;
+  border-radius: 0 12px 0 10px;
+  gap: 16px;
+
+  @include angle;
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0;
+      background-color: $color-alabaster;
+    }
+}
+
+.news__description-button {
+  background-color: #316dc2;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 18px;
+}
+
+.news__description-button svg {
+  stroke: $color-default-white;
+  width: 8px;
+  height: 8px;
+}
+
+.news__button--prev::after {
+  display: none;
+}
+
+.news__button--next::after {
+  display: none;
+}
+
+.swiper-button.news__button svg {
+  stroke: $color-cerulean-blue;
+  width: 8px;
+  height: 8px;
+}
+
+.news__button--prev svg {
+  transform: rotate(-135deg);
+}
+
+.news__button--next svg {
+  transform: rotate(45deg);
+}
+
+.news__button--prev {
+  left: 97px;
+  top: 754px;
+}
+
+.news__button--next {
+  left: auto;
+  right: 98px;
+  top: 754px;
+}
+
+.news__swiper-pagination .swiper-pagination-bullet {
+  color: $color-cerulean-blue;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.news__swiper-pagination .swiper-pagination-bullet-active {
+  color: $color-default-white;
+  background-color: $color-cerulean-blue;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news__swiper-pagination {
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: 3px;
+}
+
+
+

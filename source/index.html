@@ -411,7 +411,7 @@
       <div class="grant__to-go">
         <h2>Как поехать</h2>
         <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных
-          программах и городах, в которых можете пройти программу.</p>
+          программах<br> и городах, в которых можете пройти программу.</p>
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/mobile/grant-mobile.webp 1x, img/mobile/grant-mobile@2x.webp 2x">
@@ -422,26 +422,26 @@
           <source type="image/png" media="(max-width: 1439px)"
             srcset="img/tablet/grant-tablet.png 1x, img/tablet/grant-tablet@2x.png 2x">
           <source type="image/webp" srcset="img/desktop/grant-desktop.webp 1x, img/desktop/grant-desktop@2x.webp  2x">
-          <img src="img/desktop/grant-desktop.png" width="392" height="400" srcset="img/desktop/grant-desktop@2x.png 2x"
+          <img src="img/desktop/grant-desktop.png" width="498" height="363" srcset="img/desktop/grant-desktop@2x.png 2x"
             alt="Pointer.">
         </picture>
       </div>
-      <div>
-        <h3>Чтобы получить грант на обучение, вам нужно:</h3>
-        <ul>
-          <li>
+      <div class="grant__need">
+        <h3>Чтобы получить грант<br> на обучение, вам нужно:</h3>
+        <ul class="grant__list">
+          <li class="grant__item">
             <span>1</span>
             <p>Быть в возрасте от 16 до 30 лет</p>
           </li>
-          <li>
+          <li class="grant__item">
             <span>2</span>
             <p>Иметь оконченное среднее образование</p>
           </li>
-          <li>
+          <li class="grant__item">
             <span>3</span>
-            <p>Иметь документально подтверждённое отсутствия судимости и пройти консульскую проверку</p>
+            <p>Иметь документально подтверждённое<br> отсутствия судимости и пройти консульскую<br> проверку</p>
           </li>
-          <li>
+          <li class="grant__item">
             <span>4</span>
             <p>За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</p>
           </li>
@@ -451,29 +451,29 @@
     <section class="news">
       <h2>Новости и материалы</h2>
       <nav class="news__nav">
-        <ul>
-          <li>
-            <button>
+        <ul class="news__nav-list">
+          <li class="news__nav-item">
+            <button class="news__nav-button is-active">
               Общее
             </button>
           </li>
-          <li>
-            <button>
+          <li class="news__nav-item">
+            <button class="news__nav-button">
               Волонтерство
             </button>
           </li>
-          <li>
-            <button>
+          <li class="news__nav-item">
+            <button class="news__nav-button">
               Стажировки
             </button>
           </li>
-          <li>
-            <button>
+          <li class="news__nav-item">
+            <button class="news__nav-button">
               Карьера
             </button>
           </li>
           <li>
-            <button>
+            <button class="news__nav-button">
               Путешествия
             </button>
           </li>
@@ -481,7 +481,7 @@
       </nav>
       <div class="news__swiper swiper">
         <ul class="news__list swiper-wrapper">
-          <li class="news__ratio-wrapper swiper-slide">
+          <li class="news__ratio-wrapper news__ratio-wrapper--wide swiper-slide">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/mobile/news-mobile-1.webp 1x, img/mobile/news-mobile-1@2x.webp 2x">
@@ -493,15 +493,16 @@
                 srcset="img/tablet/news-tablet-1.png 1x, img/tablet/news-tablet-1@2x.png 2x">
               <source type="image/webp"
                 srcset="img/desktop/news-desktop-1.webp 1x, img/desktop/news-desktop-1@2x.webp  2x">
-              <img src="img/desktop/news-desktop-1.png" width="392" height="400"
+              <img src="img/desktop/news-desktop-1.png" width="604" height="400"
                 srcset="img/desktop/news-desktop-1@2x.png 2x" alt="Women.">
             </picture>
             <div class="news__item">
+              <span class="news__angle"></span>
               <span>23/03/2023</span>
               <h3>Интервью с участницей программы стажировки</h3>
-              <div>
-                <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                <button class="news__button">
+              <div class="news__description">
+                <p>Саша рассказывает, как попала в программу<br> и как прошла 6-месячная стажировка в ISOFound</p>
+                <button class="news__description-button">
                   <svg width="10" height="10" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
@@ -509,7 +510,7 @@
               </div>
             </div>
           </li>
-          <li class="news__ratio-wrapper swiper-slide">
+          <li class="news__ratio-wrapper news__ratio-wrapper--narrow swiper-slide">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/mobile/news-mobile-2.webp 1x, img/mobile/news-mobile-2@2x.webp 2x">
@@ -521,15 +522,16 @@
                 srcset="img/tablet/news-tablet-2.png 1x, img/tablet/news-tablet-2@2x.png 2x">
               <source type="image/webp"
                 srcset="img/desktop/news-desktop-2.webp 1x, img/desktop/news-desktop-2@2x.webp  2x">
-              <img src="img/desktop/news-desktop-2.png" width="392" height="400"
+              <img src="img/desktop/news-desktop-2.png" width="286" height="400"
                 srcset="img/desktop/news-desktop-2@2x.png 2x" alt="Women.">
             </picture>
             <div class="news__item">
+              <span class="news__angle"></span>
               <span>20/03/2023</span>
-              <h3>Путешествуем по миру</h3>
-              <div>
+              <h3>Путешествуем<br> по миру</h3>
+              <div class="news__description">
                 <p>Какие места посещают наши студенты весной</p>
-                <button class="news__button">
+                <button class="news__description-button">
                   <svg width="10" height="10" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
@@ -537,7 +539,7 @@
               </div>
             </div>
           </li>
-          <li class="news__ratio-wrapper swiper-slide">
+          <li class="news__ratio-wrapper news__ratio-wrapper--narrow swiper-slide">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/mobile/news-mobile-3.webp 1x, img/mobile/news-mobile-3@2x.webp 2x">
@@ -549,15 +551,103 @@
                 srcset="img/tablet/news-tablet-3.png 1x, img/tablet/news-tablet-3@2x.png 2x">
               <source type="image/webp"
                 srcset="img/desktop/news-desktop-3.webp 1x, img/desktop/news-desktop-3@2x.webp  2x">
-              <img src="img/desktop/news-desktop-3.png" width="392" height="400"
+              <img src="img/desktop/news-desktop-3.png" width="286" height="400"
                 srcset="img/desktop/news-desktop-3@2x.png 2x" alt="Women.">
             </picture>
             <div class="news__item">
+              <span class="news__angle"></span>
               <span>17/03/2023</span>
               <h3>Новая программа волонтёрства</h3>
-              <div>
+              <div class="news__description">
                 <p>Программа помощи детям длительностью 4 месяца</p>
-                <button class="news__button">
+                <button class="news__description-button">
+                  <svg width="10" height="10" role="img">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__ratio-wrapper news__ratio-wrapper--narrow swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-4.webp 1x, img/mobile/news-mobile-4@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-4.png 1x, img/mobile/news-mobile-4@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-4.webp 1x, img/tablet/news-tablet-4@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-4.png 1x, img/tablet/news-tablet-4@2x.png 2x">
+              <source type="image/webp"
+                srcset="img/desktop/news-desktop-4.webp 1x, img/desktop/news-desktop-4@2x.webp  2x">
+              <img src="img/desktop/news-desktop-4.png" width="286" height="400"
+                srcset="img/desktop/news-desktop-4@2x.png 2x" alt="Women.">
+            </picture>
+            <div class="news__item">
+              <span class="news__angle"></span>
+              <span>10/03/2023</span>
+              <h3>Построй свою карьеру</h3>
+              <div class="news__description">
+                <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <button class="news__description-button">
+                  <svg width="10" height="10" role="img">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__ratio-wrapper news__ratio-wrapper--wide swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-1.webp 1x, img/mobile/news-mobile-1@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-1.png 1x, img/mobile/news-mobile-1@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-1.webp 1x, img/tablet/news-tablet-1@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-1.png 1x, img/tablet/news-tablet-1@2x.png 2x">
+              <source type="image/webp"
+                srcset="img/desktop/news-desktop-1.webp 1x, img/desktop/news-desktop-1@2x.webp  2x">
+              <img src="img/desktop/news-desktop-1.png" width="604" height="400"
+                srcset="img/desktop/news-desktop-1@2x.png 2x" alt="Women.">
+            </picture>
+            <div class="news__item">
+              <span class="news__angle"></span>
+              <span>23/03/2023</span>
+              <h3>Интервью с участницей программы стажировки</h3>
+              <div class="news__description">
+                <p>Саша рассказывает, как попала в программу<br> и как прошла 6-месячная стажировка в ISOFound</p>
+                <button class="news__description-button">
+                  <svg width="10" height="10" role="img">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__ratio-wrapper news__ratio-wrapper--narrow swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-2.webp 1x, img/mobile/news-mobile-2@2x.webp 2x">
+              <source type="image/png" media="(max-width: 767px)"
+                srcset="img/mobile/news-mobile-2.png 1x, img/mobile/news-mobile-2@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-2.webp 1x, img/tablet/news-tablet-2@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1439px)"
+                srcset="img/tablet/news-tablet-2.png 1x, img/tablet/news-tablet-2@2x.png 2x">
+              <source type="image/webp"
+                srcset="img/desktop/news-desktop-2.webp 1x, img/desktop/news-desktop-2@2x.webp  2x">
+              <img src="img/desktop/news-desktop-2.png" width="286" height="400"
+                srcset="img/desktop/news-desktop-2@2x.png 2x" alt="Women.">
+            </picture>
+            <div class="news__item">
+              <span class="news__angle"></span>
+              <span>20/03/2023</span>
+              <h3>Путешествуем<br> по миру</h3>
+              <div class="news__description">
+                <p>Какие места посещают наши студенты весной</p>
+                <button class="news__description-button">
                   <svg width="10" height="10" role="img">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
@@ -566,71 +656,104 @@
             </div>
           </li>
         </ul>
-        <div class="swiper-pagination"></div>
       </div>
-      <!-- <div class="swiper-button-prev news__button news__button--prev">
+      <div class="news__swiper-pagination swiper-pagination"></div>
+      <div class="swiper-button swiper-button-prev news__button news__button--prev">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
       </div>
-      <div class="swiper-button-next news__button news__button--next">
+      <div class="swiper-button swiper-button-next news__button news__button--next">
         <svg width="10" height="10" role="img">
           <use href="__spritemap#sprite-arrow"></use>
         </svg>
-      </div>-->
+      </div>
     </section>
     <section class="faq">
-      <div class="accordion" data-accordion="parent">
-        <div class="accordion__element" data-accordion="element">
-          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-            data-accordion="button">Кто организатор? Какие сроки у программы?</button>
-          <div class="accordion__content" data-accordion="content">
-            <div class="accordion__wrapper">
-              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+      <h2>Вопросы и ответы</h2>
+      <div class="faq__accordion" data-accordion="parent">
+        <div class="faq__element" data-accordion="element">
+          <button class="faq__button btn btn--aquamarine" type="button"
+            data-accordion="button">Кто организатор? Какие сроки у программы?
+            <svg width="20" height="20" role="img" data-faq-toggle="is-closed">
+              <use href="__spritemap#sprite-plus"></use>
+            </svg>
+            <svg width="20" height="20" role="img" data-faq-toggle="is-opened">
+              <use href="__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
+          <div class="faq__content" data-accordion="content">
+            <div class="faq__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления. <br> В большинстве случаев грант
                 «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
                 личного участия.</p>
             </div>
           </div>
         </div>
-        <div class="accordion__element" data-accordion="element">
-          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-            data-accordion="button">Что такое грант на обучение?</button>
-          <div class="accordion__content" data-accordion="content">
-            <div class="accordion__wrapper">
-              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+        <div class="faq__element" data-accordion="element">
+          <button class="faq__button btn btn--aquamarine" type="button"
+            data-accordion="button">Что такое грант на обучение?
+            <svg width="20" height="20" role="img" data-faq-toggle="is-closed">
+              <use href="__spritemap#sprite-plus"></use>
+            </svg>
+            <svg width="20" height="20" role="img" data-faq-toggle="is-opened">
+              <use href="__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
+          <div class="faq__content" data-accordion="content">
+            <div class="faq__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления.<br> В большинстве случаев грант
                 «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
                 личного участия.</p>
             </div>
           </div>
         </div>
-        <div class="accordion__element is-active" data-accordion="element">
-          <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Как определяется
-            стоимость программы?</button>
-          <div class="accordion__content" data-accordion="content" style="max-height: 121px;">
-            <div class="accordion__wrapper">
-              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+        <div class="faq__element is-active" data-accordion="element">
+          <button class="faq__button btn btn--aquamarine" type="button" data-accordion="button">Как определяется
+            стоимость программы?
+            <svg width="20" height="20" role="img" data-faq-toggle="is-closed">
+              <use href="__spritemap#sprite-plus"></use>
+            </svg>
+            <svg width="20" height="20" role="img" data-faq-toggle="is-opened">
+              <use href="__spritemap#sprite-minus"></use>
+            </svg></button>
+          <div class="faq__content" data-accordion="content" style="max-height: 121px;">
+            <div class="faq__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления.<br> В большинстве случаев грант
                 «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
                 личного участия.</p>
             </div>
           </div>
         </div>
-        <div class="accordion__element" data-accordion="element">
-          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-            data-accordion="button">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</button>
-          <div class="accordion__content" data-accordion="content">
-            <div class="accordion__wrapper">
-              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+        <div class="faq__element faq__element--fat" data-accordion="element">
+          <button class="faq__button btn btn--aquamarine" type="button"
+            data-accordion="button">Признаётся ли учёба в рамках проекта<br> для дальнейшего обучения?
+            <svg width="20" height="20" role="img" data-faq-toggle="is-closed">
+              <use href="__spritemap#sprite-plus"></use>
+            </svg>
+            <svg width="20" height="20" role="img" data-faq-toggle="is-opened">
+              <use href="__spritemap#sprite-minus"></use>
+            </svg></button>
+          <div class="faq__content" data-accordion="content">
+            <div class="faq__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления.<br> В большинстве случаев грант
                 «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
                 личного участия.</p>
             </div>
           </div>
         </div>
-        <div class="accordion__element" data-accordion="element">
-          <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
-            data-accordion="button">Как выглядит полный процесс регистрациина программу «Стажировка»?</button>
-          <div class="accordion__content" data-accordion="content">
-            <div class="accordion__wrapper">
-              <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+        <div class="faq__element faq__element--fat" data-accordion="element">
+          <button class="faq__button btn btn--aquamarine" type="button"
+            data-accordion="button">Как выглядит полный процесс регистрации<br> на программу «Стажировка»?
+            <svg width="20" height="20" role="img" data-faq-toggle="is-closed">
+              <use href="__spritemap#sprite-plus"></use>
+            </svg>
+            <svg width="20" height="20" role="img" data-faq-toggle="is-opened">
+              <use href="__spritemap#sprite-minus"></use>
+            </svg></button>
+          <div class="faq__content" data-accordion="content">
+            <div class="faq__wrapper">
+              <p>Полная стоимость определяется организаторами в зависимости от направления.<br> В большинстве случаев грант
                 «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля
                 личного участия.</p>
             </div>
@@ -639,17 +762,19 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__container container">
         <h2>Отзывы</h2>
         <div class="reviews__swiper swiper">
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__ratio-wrapper swiper-slide">
+              <div class="reviews__details">
               <div class="reviews__person">
                 <picture>
                   <source type="image/webp" srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x">
-                  <img src="img/reviews-1.png" srcset="img/reviews-1@2x.png" width="258" height="253" alt="Лола Алекс.">
+                  <img src="img/reviews-1.png" srcset="img/reviews-1@2x.png" width="90" height="90" alt="Лола Алекс.">
                 </picture>
-                <h3>Лола Алекс</h3>
+                <h3>Лола<br> Алекс</h3>
+              </div>
+              <div class="reviews__info">
                 <div class="reviews__program">
                   <h4>Программа</h4>
                   <p>Masa Art Challenge</p>
@@ -659,21 +784,25 @@
                   <p>Осень 2022</p>
                 </div>
               </div>
+              </div>
               <div class="reviews__item">
-                <h5>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h5>
+                <h5>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов<br> в жизни!</h5>
                 <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
                   Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я
                   чувствую огромную благодарность за предоставленную мне возможность.</p>
               </div>
             </li>
             <li class="reviews__ratio-wrapper swiper-slide">
-              <div class="reviews__person">
+              <div class="reviews__details">
+                <div class="reviews__person">
                 <picture>
                   <source type="image/webp" srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x">
-                  <img src="img/reviews-2.png" srcset="img/reviews-2@2x.png" width="258" height="253"
+                  <img src="img/reviews-2.png" srcset="img/reviews-2@2x.png" width="90" height="90"
                     alt="Давид Иванов.">
                 </picture>
-                <h3>Давид Иванов</h3>
+                <h3>Давид<br> Иванов</h3>
+              </div>
+              <div class="reviews__info">
                 <div class="reviews__program">
                   <h4>Программа</h4>
                   <p>Volunteer Chance</p>
@@ -683,21 +812,50 @@
                   <p>Лето 2022</p>
                 </div>
               </div>
+              </div>
               <div class="reviews__item">
-                <h5>Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h5>
-                <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал
-                  эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем
-                  уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                <h5>Благодаря опыту стажировки я узнал<br> так много нового о себе и об окружающем мире.</h5>
+                <p>Каждый день был возможностью оказать ощутимое влияние<br> на жизнь других людей. Я бы очень рекомендовал<br>
+                  эту волонтёрскую программу всем, кто ищет значимый<br> и незабываемый опыт. Организация была на высшем
+                  уровне.<br> Для меня было честью быть частью такой удивительной инициативы.</p>
+              </div>
+            </li>
+            <li class="reviews__ratio-wrapper swiper-slide">
+              <div class="reviews__details">
+                <div class="reviews__person">
+                <picture>
+                  <source type="image/webp" srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x">
+                  <img src="img/reviews-2.png" srcset="img/reviews-2@2x.png" width="90" height="90"
+                    alt="Давид Иванов.">
+                </picture>
+                <h3>Давид<br> Иванов</h3>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__program">
+                  <h4>Программа</h4>
+                  <p>Volunteer Chance</p>
+                </div>
+                <div class="reviews__date">
+                  <h4>Дата</h4>
+                  <p>Лето 2022</p>
+                </div>
+              </div>
+              </div>
+              <div class="reviews__item">
+                <h5>Благодаря опыту стажировки я узнал<br> так много нового о себе и об окружающем мире.</h5>
+                <p>Каждый день был возможностью оказать ощутимое влияние<br> на жизнь других людей. Я бы очень рекомендовал<br>
+                  эту волонтёрскую программу всем, кто ищет значимый<br> и незабываемый опыт. Организация была на высшем
+                  уровне.<br> Для меня было честью быть частью такой удивительной инициативы.</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="swiper-button-prev reviews__button reviews__button--prev">
+        <div class=".swiper-button swiper-button-prev reviews__button reviews__button--prev">
           <svg width="10" height="10" role="img">
             <use href="__spritemap#sprite-arrow"></use>
           </svg>
         </div>
-        <div class="swiper-button-next reviews__button reviews__button--next">
+        <div class=".swiper-button swiper-button-next reviews__button reviews__button--next">
           <svg width="10" height="10" role="img">
             <use href="__spritemap#sprite-arrow"></use>
           </svg>

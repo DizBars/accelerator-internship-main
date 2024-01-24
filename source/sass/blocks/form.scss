@@ -1,0 +1,143 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form .form__custom-input span,
+.form .form__custom-textarea span,
+.form .form__custom-select span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-alabaster;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form label input {
+  margin: 0;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  background-color: transparent;
+  max-width: 350px;
+  width: 350px;
+  min-height: 50px;
+  border-radius: 8px;
+}
+
+.form label textarea {
+  margin: 0;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  background-color: transparent;
+  max-width: 350px;
+  width: 350px;
+  min-height: 98px;
+  border-radius: 8px;
+}
+
+.form label textarea {
+  margin: 0;
+}
+
+.form__custom-input,
+.form__custom-textarea {
+  padding: 0;
+}
+
+.form__custom-select {
+  padding: 0;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+}
+
+.form__custom-select span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-alabaster;
+}
+
+.custom-select__button {
+  margin: 0;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  background-color: transparent;
+  max-width: 350px;
+  width: 350px;
+  min-height: 50px;
+  border-radius: 8px;
+}
+
+.custom-select__icon {
+  background-color: $color-default-white;
+  width: 14px;
+  height: 7.5px;
+  margin-right: 10px;
+}
+
+.custom-toggle:last-of-type {
+  padding: 0;
+}
+
+.custom-toggle label {
+  padding: 0 30px;
+}
+
+.custom-toggle--checkbox .custom-toggle__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255, 0.7);
+}
+
+.custom-toggle input:checked + .custom-toggle__icon {
+  background-color: $color-default-white;
+  border: 1px solid rgb(255, 255, 255);
+  z-index: 1;
+
+  @include check;
+
+  &::before {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.custom-toggle__label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: $color-default-white;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.form__toggle-group {
+  margin-top: 4px;
+  margin-bottom: 27px;
+}
+
+.form__button {
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  color: $color-default-white;
+  width: 350px;
+  text-align: center;
+  padding-left: 107px;
+}
+
+.form__button svg {
+  stroke: $color-cerulean-blue;
+}
+
+.form__button::after {
+  background-color: $color-default-white;
+}

@@ -1,0 +1,36 @@
+.feedback {
+  padding: 120px 100px;
+  position: relative;
+}
+
+.feedback__wrapper {
+  background-color: $color-cerulean-blue;
+  border-radius: 16px;
+  padding: 82px 74px 41px;
+  color: $color-alabaster;
+  width: 498px;
+  z-index: 1;
+}
+
+.feedback__wrapper h2 {
+  color: $color-default-white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.feedback__wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.feedback__image {
+  position: absolute;
+  top: 120px;
+  z-index: -1;
+}

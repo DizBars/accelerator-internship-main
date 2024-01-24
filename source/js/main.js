@@ -4,6 +4,8 @@ import {initAccordions} from './modules/init-accordion';
 import {initSliderHero, initSliderPrograms, initSliderNews, initSliderReviews} from './modules/init-slider';
 import './modules/burger-menu';
 import {newsToggle} from './modules/news-buttons';
+import {CustomSelect} from './vendor/select/custom-select';
+import {Form} from './vendor/form-validate/form';
 
 window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();
@@ -13,6 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderPrograms();
     initSliderNews();
     initSliderReviews();
+    const select = new CustomSelect();
+    select.init();
+    const form = new Form();
+    window.form = form;
+    form.init();
   });
 });
 

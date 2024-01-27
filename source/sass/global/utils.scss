@@ -70,3 +70,66 @@
   outline: none;
 }
 
+.br--desktop {
+  display: block;
+
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.br--tablet {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.br--mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.br--tablet-mobile {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.br--tablet-desktop {
+  display: block;
+
+  @include vp-1439 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.br--mobile-desktop {
+  display: block;
+
+  @include vp-1439 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}

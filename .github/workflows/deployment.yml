@@ -1,0 +1,12 @@
+name: Deploy intership
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Instal deps
+        uses: npm install
+      - name: Run deploy
+        uses: npm run dev

@@ -28,6 +28,15 @@
   width: 350px;
   min-height: 50px;
   border-radius: 8px;
+
+  @include vp-1439 {
+    max-width: 352px;
+    width: 352px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+  }
 }
 
 .form label textarea {
@@ -38,6 +47,15 @@
   width: 350px;
   min-height: 98px;
   border-radius: 8px;
+
+  @include vp-1439 {
+    max-width: 352px;
+    width: 352px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+  }
 }
 
 .form label textarea {
@@ -56,6 +74,11 @@
   flex-direction: column;
   gap: 10px;
   margin: 0;
+
+  @include vp-1439 {
+    padding: 0;
+    gap: 8px;
+  }
 }
 
 .form__custom-select span {
@@ -73,6 +96,15 @@
   width: 350px;
   min-height: 50px;
   border-radius: 8px;
+
+  @include vp-1439 {
+    max-width: 352px;
+    width: 352px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+  }
 }
 
 .custom-select__icon {
@@ -132,6 +164,10 @@
   width: 350px;
   text-align: center;
   padding-left: 107px;
+
+  @include vp-1439 {
+    width: auto;
+  }
 }
 
 .form__button svg {

@@ -3,12 +3,25 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  position: relative;
+
+  @include vp-1439 {
+    padding: 0 45px 50px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .footer__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include vp-1439 {
+    justify-content: space-between;
+  }
 }
 
 .navigation__list {
@@ -17,8 +30,16 @@
   flex-direction: row;
   margin: 0;
   padding: 0;
-  gap: 18.5px;
-  margin-left: 46px;
+  gap: 30.5px;
+  margin-left: 52px;
+
+  @include vp-1439 {
+    gap: 15.5px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .navigation__button {
@@ -28,10 +49,17 @@
   color: $color-charcoal;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .social {
   margin-left: auto;
+
+  @include vp-1439 {
+    position: absolute;
+    bottom: 50px;
+    right: 45px;
+  }
 }
 
 .social__list {
@@ -40,7 +68,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px;
+  gap: 10px;
 
 }
 
@@ -55,24 +83,40 @@
   fill: $color-default-white;
 }
 
-.footer__others-wrapper {
+.footer__copyright {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @include vp-1439 {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
 }
 
-.footer__others-wrapper span {
+.footer__copyright span {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: $color-charcoal;
   opacity: 0.6;
+
+  @include vp-1439 {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
-.footer__others-wrapper a {
+.footer__copyright a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: $color-charcoal;
   border-bottom: 1px solid $color-charcoal;
+
+  @include vp-1439 {
+    font-size: 12px;
+    line-height: 12px;
+    width: fit-content;
+  }
 }

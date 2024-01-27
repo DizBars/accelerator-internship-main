@@ -1,6 +1,14 @@
 .reviews {
   padding: 0 100px 182px;
   position: relative;
+
+  @include vp-1439 {
+    padding: 0 0 157px 45px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .reviews h2 {
@@ -12,6 +20,14 @@
   margin-bottom: 46px;
   margin-top: 4px;
   padding-left: 3px;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-top: 3px;
+    padding-left: 0;
+    margin-bottom: 41px;
+  }
 }
 
 .reviews__list {
@@ -25,6 +41,11 @@
   border: 1px solid $color-cerulean-blue;
   border-radius: 16px;
   min-height: 456px;
+
+  @include vp-1439 {
+    width: 560px;
+    min-height: 395px;
+  }
 }
 
 .reviews__details {
@@ -47,6 +68,11 @@
   flex-direction: row;
   align-items: center;
   gap: 23px;
+
+  @include vp-1439 {
+    margin-top: 3px;
+    gap: 27px;
+  }
 }
 
 .reviews__person h3 {
@@ -55,6 +81,11 @@
   line-height: 24px;
   color: $color-cerulean-blue;
   margin: 0;
+
+  @include vp-1439 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .reviews__details h4 {
@@ -66,6 +97,10 @@
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 6px;
+
+  @include vp-1439 {
+    margin-bottom: 4px;
+  }
 }
 
 .reviews__details p {
@@ -75,6 +110,11 @@
   letter-spacing: 0.01em;
   color: $color-charcoal;
   margin: 0;
+
+  @include vp-1439 {
+    line-height: 20px;
+    letter-spacing: 0;
+  }
 }
 
 .reviews__program {
@@ -94,6 +134,12 @@
   color: $color-cerulean-blue;
   margin: 0;
   margin-bottom: 14px;
+
+  @include vp-1439 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
 }
 
 .reviews__item p {
@@ -102,6 +148,10 @@
   line-height: 26px;
   color: $color-charcoal;
   margin: 0;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
 }
 
 .reviews__button--prev::after {
@@ -122,6 +172,11 @@
   left: auto;
   right: 132px;
   top: 614px;
+
+  @include vp-1439 {
+    top: 548px;
+    right: 77px;
+  }
 }
 
 .reviews__button--next {
@@ -130,6 +185,11 @@
   left: auto;
   right: 100px;
   top: 614px;
+
+  @include vp-1439 {
+    top: 548px;
+    right: 45px;
+  }
 }
 
 .reviews__button--next::after {
@@ -142,6 +202,16 @@
   background: rgb(49, 109, 194, 0.2);
   left: 7%;
   bottom: 131px;
+
+  @include vp-1439 {
+    max-width: 560px;
+    left: 45px;
+    bottom: 111px;
+  }
+
+  @include vp-767 {
+    max-width: 200px;
+  }
 }
 
 .reviews__scrollbar .swiper-scrollbar-drag {

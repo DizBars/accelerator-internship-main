@@ -3,6 +3,10 @@
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   position: relative;
+
+  @include vp-1439 {
+    padding: 99px 45px 100px;
+  }
 }
 
 .contacts h2 {
@@ -11,6 +15,13 @@
   line-height: 50px;
   margin: 0;
   margin-top: 4px;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
 }
 
 .contacts h3 {
@@ -28,6 +39,10 @@
   font-weight: 400;
   line-height: 26px;
   margin: 0;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
 }
 
 .contacts__text {
@@ -37,6 +52,11 @@
   margin-bottom: 73px;
   position: relative;
 
+  @include vp-1439 {
+    flex-direction: column;
+    margin-bottom: 57px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -45,6 +65,10 @@
     background-color: $color-default-white;
     opacity: 0.2;
     bottom: -33px;
+
+    @include vp-1439 {
+      bottom: -27px;
+    }
   }
 }
 
@@ -53,6 +77,15 @@
   flex-direction: row;
   gap: 52.5px;
   width: 604px;
+
+  @include vp-1439 {
+    gap: 89.5px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .contacts__office,
@@ -62,6 +95,10 @@
   flex-direction: column;
   gap: 14px;
   max-width: 263px;
+
+  @include vp-1439 {
+    gap: 18px;
+  }
 }
 
 .contacts__map {
@@ -72,4 +109,16 @@
   position: absolute;
   left: 608px;
   top: 80px;
+
+  @include vp-1439 {
+    width: 40px;
+    height: 40px;
+    left: 339px;
+    top: 108px;
+  }
+
+  @include vp-767 {
+    left: 0px;
+    top: 108px;
+  }
 }

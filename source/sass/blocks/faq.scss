@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-1439 {
+    padding: 96px 45px;
+  }
 }
 
 .faq h2 {
@@ -12,6 +16,12 @@
   line-height: 50px;
   margin: 0;
   margin-bottom: 67px;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 41px;
+  }
 }
 
 .faq__accordion {
@@ -21,6 +31,10 @@
   width: 1028px;
   margin: 0 auto;
   gap: 10px;
+
+  @include vp-1439 {
+    width: auto;
+  }
 }
 
 .faq__button {
@@ -36,7 +50,19 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
-  max-width: 948px;
+  max-width: 900px;
+
+  @include vp-1439 {
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 568px;
+  }
+
+  @include vp-767 {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .faq__button svg {
@@ -44,6 +70,11 @@
   right: 49px;
   top: 49px;
   z-index: 3;
+
+  @include vp-1439 {
+    right: 39px;
+    top: 39px;
+  }
 }
 
 .faq__element {
@@ -52,6 +83,11 @@
   border-radius: 16px;
   position: relative;
   min-height: 120px;
+
+  @include vp-1439 {
+    padding: 36px 29px;
+    min-height: 100px;
+  }
 
   &::after {
     content: "";
@@ -62,17 +98,30 @@
     border-radius: 50%;
     right: 39px;
     top: 39px;
+
+    @include vp-1439 {
+      right: 29px;
+      top: 29px;
+    }
   }
 }
 
 .faq__element--fat {
   padding: 32px 39px;
+
+  @include vp-1439 {
+    padding: 24px 29px;
+  }
 }
 
 .faq__element.is-active {
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   padding: 42px 39px 32px;
+
+  @include vp-1439 {
+    padding: 36px 29px 25px;
+  }
 
   &::after {
     content: "";
@@ -99,6 +148,10 @@
 .faq__element.is-active .faq__button {
   color: $color-default-white;
   margin-bottom: 16px;
+
+  @include vp-1439 {
+    margin-bottom: 23px;
+  }
 }
 
 .faq__toggle {
@@ -115,4 +168,8 @@
   font-size: 16px;
   line-height: 26px;
   max-width: 690px;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
 }

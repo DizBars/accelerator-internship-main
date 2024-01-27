@@ -12,7 +12,7 @@ const setSliderHero = () => new Swiper(heroSlider, {
   },
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 300000,
   },
   breakpoints: {
     1440: {
@@ -37,6 +37,14 @@ const setSliderPrograms = () => new Swiper(programsSlider, {
   slidesPerGroup: 1,
   spaceBetween: 32,
   breakpoints: {
+    320: {
+      slidesPerView: '1',
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
     1440: {
       allowTouchMove: false,
       slidesPerView: '3',
@@ -59,7 +67,6 @@ const initSliderPrograms = () => {
 };
 
 const setSliderNews = () => new Swiper(newsSlider, {
-  direction: 'horizontal',
   pagination: {
     el: '.news__swiper-pagination',
     clickable: true,
@@ -68,9 +75,19 @@ const setSliderNews = () => new Swiper(newsSlider, {
     },
   },
   loop: false,
-  slidesPerGroup: '1',
   spaceBetween: 32,
   breakpoints: {
+    320: {
+      slidesPerView: '1',
+      spaceBetween: 0,
+    },
+    768: {
+      grid: {
+        rows: 2,
+      },
+      slidesPerView: '2',
+      spaceBetween: 30,
+    },
     1440: {
       allowTouchMove: false,
       slidesPerView: 'auto',
@@ -98,6 +115,14 @@ const setSliderReviews = () => new Swiper(reviewsSlider, {
   slidesPerGroup: 1,
   spaceBetween: 32,
   breakpoints: {
+    320: {
+      slidesPerView: '1',
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
     1440: {
       allowTouchMove: false,
       slidesPerView: '2',

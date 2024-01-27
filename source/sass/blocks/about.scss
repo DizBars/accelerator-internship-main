@@ -1,5 +1,9 @@
 .about {
   padding: 118px 100px 0;
+
+  @include vp-1439 {
+    padding: 99px 45px 100px 45px;
+  }
 }
 
 .about__wrapper {
@@ -7,12 +11,22 @@
   flex-direction: row;
   gap: 159px;
   margin-bottom: 60px;
+
+  @include vp-1439 {
+    gap: 29px;
+    flex-direction: column;
+    padding-right: 180px;
+  }
 }
 
 .about__main {
   display: flex;
   flex-direction: column;
   width: 477px;
+
+  @include vp-1439 {
+    width: auto;
+  }
 }
 
 .about__main h2 {
@@ -23,6 +37,13 @@
   margin: 0;
   margin-top: 5px;
   margin-bottom: 35px;
+
+  @include vp-1439 {
+    margin-top: 0;
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
 }
 
 .about__main p {
@@ -31,12 +52,21 @@
   line-height: 32px;
   color: $color-charcoal;
   margin: 0;
+
+  @include vp-1439 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .about__target {
   display: flex;
   flex-direction: column;
   width: 498px;
+
+  @include vp-1439 {
+    width: auto;
+  }
 }
 
 .about__target h3 {
@@ -46,6 +76,12 @@
   color: $color-cerulean-blue;
   margin: 0;
   margin-bottom: 33px;
+
+  @include vp-1439 {
+    margin-bottom: 23px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .about__target p {
@@ -55,6 +91,11 @@
   color: $color-charcoal;
   margin: 0;
   margin-bottom: 33px;
+
+  @include vp-1439 {
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
 }
 
 .about__list {
@@ -68,6 +109,16 @@
   margin: 0;
   padding: 72px 106px 12px 126px;
   z-index: 1;
+
+  @include vp-1439 {
+    gap: 42px 50px;
+    padding: 62px 60px 40px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about__item {
@@ -97,27 +148,56 @@
   border-radius: 16px;
   display: flex;
   flex-direction: row;
+
+  @include vp-1439 {
+    flex-direction: column;
+    padding: 26px 0 0 29px;
+    width: 264px;
+  }
+
+  @include vp-767 {
+    width: auto;
+  }
 }
 
 .about__programs {
   min-height: 152px;
   gap: 36px;
+
+  @include vp-1439 {
+    gap: 7px;
+    min-height: 168px;
+  }
 }
 
 .about__participants {
   min-height: 152px;
   gap: 24px;
+
+  @include vp-1439 {
+    gap: 7px;
+    min-height: 168px;
+  }
 }
 
 .about__grant {
   min-height: 132px;
-  padding: 25px 35px 0 53px;
   gap: 9px;
+
+  @include vp-1439 {
+    gap: 7px;
+    min-height: 168px;
+  }
 }
 
 .about__countries {
   min-height: 132px;
   gap: 15px;
+
+  @include vp-1439 {
+    gap: 7px;
+    min-height: 168px;
+  }
 }
 
 .about__text h4 {
@@ -130,6 +210,11 @@
   margin: 0;
   margin-top: 4px;
   max-width: 171px;
+
+  @include vp-1439 {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about__text p {
@@ -139,4 +224,14 @@
   color: $color-alabaster;
   margin: 0;
   max-width: 190px;
+
+  @include vp-1439 {
+    max-width: 218px;
+  }
+}
+
+.about__button {
+  @include vp-1439 {
+    padding: 0 21px 0 30px;
+  }
 }

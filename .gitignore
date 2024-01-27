@@ -13,6 +13,7 @@ backstop_data
 .cache
 *.local
 package-lock.json
+build
 
 # Editor directories and files
 .vscode/*

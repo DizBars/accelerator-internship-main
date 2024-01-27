@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4.0.1
         with:
-          node-version: 20.11.0
+          node-version: 18.16.0
 
       - name: Instal deps
         run: npm i

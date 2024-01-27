@@ -7,6 +7,6 @@ jobs:
       - name: Get repository code
         uses: actions/checkout@v3
       - name: Instal deps
-        uses: npm install
+        run: npm install
       - name: Run deploy
-        uses: npm run dev
+        run: npm run dev

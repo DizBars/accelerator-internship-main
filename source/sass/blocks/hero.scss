@@ -8,9 +8,23 @@
   z-index: -10;
 }
 
+.hero__background img {
+  width: 100%;
+}
+
 .hero__ratio-wrapper {
   position: relative;
   z-index: -1;
+  width: 100%;
+  height: 800px;
+
+  @include vp-1439 {
+    height: 1024px;
+  }
+
+  @include vp-767 {
+    height: 568px;
+  }
 }
 
 .hero__item {
@@ -30,6 +44,27 @@
   }
 }
 
+.hero__item-wrapper {
+  @include vp-767 {
+    background-color: $color-default-white;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 0 0 14px 14px;
+  }
+
+  @include angle;
+
+  &::after {
+    @include vp-767 {
+      transform: rotate(90deg);
+      width: 10px;
+      height: 10px;
+      right: -10px;
+      top: 0;
+    }
+  }
+}
+
 .hero__item h2 {
   font-size: 54px;
   font-weight: 400;
@@ -40,6 +75,7 @@
   border-radius: 0 30px 30px 0;
   padding: 40px 50px 30px 50px;
   margin: 0;
+  display: block;
 
   @include vp-1439 {
     padding: 31px 40px 23px 40px;
@@ -53,6 +89,7 @@
     width: 290px;
     font-size: 22px;
     line-height: 26px;
+    border-radius: 0 16px 16px 0;
   }
 
   @include angle;
@@ -68,6 +105,13 @@
       height: 20px;
       top: -20px;
     }
+
+    @include vp-767 {
+      width: 10px;
+      height: 10px;
+      top: -10px;
+      left: 80px;
+    }
   }
 }
 
@@ -79,6 +123,7 @@
   margin: 0;
   margin-top: -7px;
   width: 446px;
+  display: block;
 
   @include vp-1439 {
     width: 285px;
@@ -92,6 +137,9 @@
     font-size: 14px;
     line-height: 20px;
     background-color: $color-default-white;
+    padding: 0 14px 10px;
+    border-radius: 0 0 14px 0;
+    margin-top: -5px;
   }
 }
 
@@ -112,6 +160,7 @@
   @include vp-767 {
     width: auto;
     flex-direction: column;
+    gap: 0;
     padding: 0;
     background-color: transparent
   }
@@ -123,6 +172,12 @@
     height: 26px;
     right: -26px;
     transform: rotate(90deg);
+
+    @include vp-767 {
+      width: 10px;
+      height: 10px;
+      right: 13px;
+    }
   }
 }
 
@@ -142,6 +197,10 @@
 .hero__button svg {
   stroke: $color-default-white;
   z-index: 3;
+
+  @include vp-767 {
+    margin-top: 2px;
+  }
 }
 
 .hero__swiper {
@@ -152,7 +211,7 @@
   position: absolute;
   z-index: 3;
   left: 100px;
-  top: 409px;
+  bottom: 353px;
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -162,7 +221,14 @@
 
   @include vp-1439 {
     left: 45px;
-    top: 653px;
+    bottom: 333px;
+  }
+
+  @include vp-767 {
+    border-radius: 12px 12px 0 0;
+    bottom: 327px;
+    left: 15px;
+    padding: 10px 16px;
   }
 }
 

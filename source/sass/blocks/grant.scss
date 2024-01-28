@@ -11,6 +11,11 @@
     flex-direction: column;
     gap: 41px;
   }
+
+  @include vp-767 {
+    padding: 69px 15px 67px;
+    gap: 31px;
+  }
 }
 
 .grant h2 {
@@ -25,6 +30,12 @@
     line-height: 50px;
     margin-bottom: 28px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 }
 
 .grant p {
@@ -38,6 +49,14 @@
   @include vp-1439 {
     line-height: 20px;
     margin-bottom: 36px;
+    max-width: 498px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    width: auto;
+    margin-bottom: 25px;
   }
 }
 
@@ -45,6 +64,10 @@
   display: flex;
   flex-direction: column;
   flex-basis: 498px;
+
+  @include vp-1439 {
+    flex-basis: 0;
+  }
 }
 
 .grant__to-go img {
@@ -72,6 +95,12 @@
     line-height: 28px;
     margin-bottom: 42px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 26px;
+  }
 }
 
 .grant__list {
@@ -91,6 +120,13 @@
     grid-template-columns: 46.3% 46.4%;
     gap: 25px 47px;
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 15px;
+  }
 }
 
 .grant__item {
@@ -99,11 +135,19 @@
   border: 1px solid $color-alabaster;
   border-radius: 16px;
 
+
+  @include vp-1439 {
+    padding: 25px 15px 25px 23px;
+  }
+
+  @include vp-767 {
+    padding: 18px 24px;
+  }
+
   &::after {
     position: absolute;
     counter-increment: steps;
     content: counter(steps);
-    padding: 10px;
     left: -21px;
     top: -16px;
     width: 42px;
@@ -115,11 +159,18 @@
     font-weight: 500;
     line-height: 22px;
     letter-spacing: .22px;
-    text-align: center;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  @include vp-1439 {
-    padding: 25px 15px 25px 23px;
+    @include vp-767 {
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      line-height: 18px;
+      top: -6px;
+      left: -16px;
+    }
   }
 }
 

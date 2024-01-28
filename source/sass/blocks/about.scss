@@ -4,6 +4,10 @@
   @include vp-1439 {
     padding: 99px 45px 100px 45px;
   }
+
+  @include vp-767 {
+    padding: 62px 15px;
+  }
 }
 
 .about__wrapper {
@@ -16,6 +20,12 @@
     gap: 29px;
     flex-direction: column;
     padding-right: 180px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    gap: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -44,6 +54,12 @@
     line-height: 50px;
     margin-bottom: 25px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 }
 
 .about__main p {
@@ -56,6 +72,11 @@
   @include vp-1439 {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -82,6 +103,12 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 11px;
+  }
 }
 
 .about__target p {
@@ -95,6 +122,12 @@
   @include vp-1439 {
     line-height: 20px;
     margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -118,6 +151,8 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    padding: 42px 20px 40px 30px;
+    gap: 22px;
   }
 }
 
@@ -140,63 +175,62 @@
 
 .about__item-star svg {
   fill: $color-default-white;
-}
-
-.about__text {
-  padding: 25px 60px 0 59px;
-  border: 1px solid $color-alabaster;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-
-  @include vp-1439 {
-    flex-direction: column;
-    padding: 26px 0 0 29px;
-    width: 264px;
-  }
 
   @include vp-767 {
-    width: auto;
+    width: 18px;
+    height: 18px;
   }
 }
 
 .about__programs {
-  min-height: 152px;
-  gap: 36px;
-
-  @include vp-1439 {
-    gap: 7px;
-    min-height: 168px;
+  @include vp-1440 {
+    min-height: 152px;
+    gap: 36px;
   }
 }
 
 .about__participants {
-  min-height: 152px;
-  gap: 24px;
-
-  @include vp-1439 {
-    gap: 7px;
-    min-height: 168px;
-  }
-}
-
-.about__grant {
-  min-height: 132px;
-  gap: 9px;
-
-  @include vp-1439 {
-    gap: 7px;
-    min-height: 168px;
+  @include vp-1440 {
+    min-height: 152px;
+    gap: 24px;
   }
 }
 
 .about__countries {
-  min-height: 132px;
-  gap: 15px;
+  @include vp-1440 {
+    min-height: 132px;
+    gap: 15px;
+  }
+}
+
+.about__text {
+  padding: 25px 47px 0 59px;
+  border: 1px solid $color-alabaster;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   @include vp-1439 {
+    flex-direction: column;
+    padding: 26px 0 25px 29px;
+    width: 264px;
     gap: 7px;
-    min-height: 168px;
+  }
+
+  @include vp-767 {
+    padding: 15px 10px 23px 19px;
+    width: auto;
+    gap: 4px;
+    justify-content: normal;
+  }
+}
+
+.about__grant {
+  @include vp-1440 {
+    min-height: 132px;
+    gap: 9px;
+    padding: 25px 53px 0 53px;
   }
 }
 
@@ -209,11 +243,17 @@
   text-transform: uppercase;
   margin: 0;
   margin-top: 4px;
-  max-width: 171px;
+  max-width: 170px;
 
   @include vp-1439 {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @include vp-767 {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -228,10 +268,19 @@
   @include vp-1439 {
     max-width: 218px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .about__button {
   @include vp-1439 {
     padding: 0 21px 0 30px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px 0 19px;
   }
 }

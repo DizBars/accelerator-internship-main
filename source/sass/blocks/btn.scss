@@ -19,6 +19,14 @@
   gap: 48px;
   width: max-content;
   letter-spacing: 0.02em;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 15px 15px 15px 19px;
+    height: 42px;
+    gap: 32px;
+  }
 }
 
 .button--primary::after {
@@ -30,6 +38,11 @@
   background-color: $color-cerulean-blue;
   right: 3px;
   z-index: -1;
+
+  @include vp-767 {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .button--primary svg {

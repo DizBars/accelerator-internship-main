@@ -4,6 +4,8 @@ const heroSlider = document.querySelector('.hero__swiper');
 const programsSlider = document.querySelector('.programs__swiper');
 const newsSlider = document.querySelector('.news__swiper');
 const reviewsSlider = document.querySelector('.reviews__swiper');
+const newsNav = document.querySelector('.news__nav');
+let setSliderNewsNav;
 
 const setSliderHero = () => new Swiper(heroSlider, {
   pagination: {
@@ -66,6 +68,31 @@ const initSliderPrograms = () => {
   }
 };
 
+const initSliderNewsNav = () => {
+  if (newsNav && window.innerWidth < 767) {
+    setSliderNewsNav = new Swiper(newsNav, {
+      loop: false,
+      spaceBetween: 0,
+      slidesPerView: 'auto',
+    });
+  }
+};
+
+const destroyNewsNavSwiper = () => {
+  if (window.innerWidth > 767 && setSliderNewsNav) {
+    setSliderNewsNav.destroy();
+    document.querySelector('.news__nav').style.display = 'block';
+  } else if (setSliderNewsNav && !setSliderNewsNav.initialized) {
+    initSliderNewsNav();
+  }
+};
+
+const handleResize = () => {
+  destroyNewsNavSwiper();
+};
+
+window.addEventListener('resize', handleResize);
+
 const setSliderNews = () => new Swiper(newsSlider, {
   pagination: {
     el: '.news__swiper-pagination',
@@ -79,7 +106,10 @@ const setSliderNews = () => new Swiper(newsSlider, {
   breakpoints: {
     320: {
       slidesPerView: '1',
-      spaceBetween: 0,
+      spaceBetween: 20,
+      grid: {
+        rows: 2,
+      },
     },
     768: {
       grid: {
@@ -144,4 +174,4 @@ const initSliderReviews = () => {
   }
 };
 
-export {initSliderHero, initSliderPrograms, initSliderNews, initSliderReviews};
+export {initSliderHero, initSliderPrograms, initSliderNews, initSliderReviews, handleResize, initSliderNewsNav};

@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 0;
+    padding: 0 15px 59px;
   }
 }
 
@@ -28,6 +28,13 @@
     padding-left: 0;
     margin-bottom: 41px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 1px;
+    margin-bottom: 31px;
+  }
 }
 
 .reviews__list {
@@ -46,6 +53,10 @@
     width: 560px;
     min-height: 395px;
   }
+
+  @include vp-767 {
+    padding: 30px 14px 25px;
+  }
 }
 
 .reviews__details {
@@ -54,6 +65,13 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: start;
+    gap: 11px;
+    margin-bottom: 24px;
+  }
 }
 
 .reviews__person {
@@ -61,6 +79,10 @@
   flex-direction: row;
   align-items: center;
   gap: 15px;
+
+  @include vp-767 {
+    gap: 10px;
+  }
 }
 
 .reviews__info {
@@ -72,6 +94,10 @@
   @include vp-1439 {
     margin-top: 3px;
     gap: 27px;
+  }
+
+  @include vp-767 {
+    gap: 25px;
   }
 }
 
@@ -85,6 +111,11 @@
   @include vp-1439 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -101,6 +132,10 @@
   @include vp-1439 {
     margin-bottom: 4px;
   }
+
+  @include vp-767 {
+    margin-bottom: 7px;
+  }
 }
 
 .reviews__details p {
@@ -114,6 +149,11 @@
   @include vp-1439 {
     line-height: 20px;
     letter-spacing: 0;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -140,6 +180,12 @@
     line-height: 24px;
     margin-bottom: 16px;
   }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 .reviews__item p {
@@ -150,6 +196,11 @@
   margin: 0;
 
   @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
     line-height: 20px;
   }
 }
@@ -174,8 +225,15 @@
   top: 614px;
 
   @include vp-1439 {
-    top: 548px;
+    top: auto;
     right: 77px;
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    top: 20px;
+    right: 45px;
+    bottom: auto;
   }
 }
 
@@ -187,8 +245,15 @@
   top: 614px;
 
   @include vp-1439 {
-    top: 548px;
+    top: auto;
     right: 45px;
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    top: 20px;
+    right: 15px;
+    bottom: auto;
   }
 }
 
@@ -210,7 +275,7 @@
   }
 
   @include vp-767 {
-    max-width: 200px;
+    display: none;
   }
 }
 
@@ -222,4 +287,11 @@
   stroke: $color-cerulean-blue;
   width: 8px;
   height: 8px;
+}
+
+.reviews__person img {
+  @include vp-767 {
+    width: 60px;
+    height: 60px;
+  }
 }

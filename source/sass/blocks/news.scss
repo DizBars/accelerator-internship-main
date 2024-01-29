@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 62px 15px;
+    padding: 62px 0 50px 15px;
   }
 }
 
@@ -32,6 +32,7 @@
   @include vp-767 {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 27px;
   }
 }
 
@@ -50,8 +51,19 @@
   }
 
   @include vp-767 {
-    display: none;
+    gap: 12px;
+    margin-bottom: 23px;
   }
+}
+
+.news__nav {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.news__nav-item {
+  width: fit-content;
 }
 
 .news__nav-button {
@@ -70,6 +82,12 @@
 
   @include vp-1439 {
     padding: 11px 19px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 13px;
   }
 }
 
@@ -92,7 +110,8 @@
   }
 
   @include vp-767 {
-    max-width: 260px;
+    max-width: 290px;
+    padding-right: 15px;
   }
 }
 
@@ -106,6 +125,20 @@
   @include vp-1439 {
     width: 324px;
     height: 350px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 330px;
+    border-radius: 12px;
+  }
+}
+
+.news__ratio-wrapper:nth-child(2n) img {
+  @include vp-767 {
+    width: 290px;
+    height: 240px;
+    border-radius: 12px;
   }
 }
 
@@ -130,6 +163,10 @@
   display: block;
   width: min-content;
   padding: 11px 12px 4px 0;
+
+  @include vp-767 {
+    padding: 10px 12px 4px 0;
+  }
 
   @include angle;
 
@@ -172,22 +209,11 @@ span.news__angle {
     padding: 5px 0 1px;
   }
 
-  @include angle;
-
-    &::after {
-      width: 16px;
-      height: 16px;
-      right: -16px;
-      bottom: 0;
-      background-color: $color-alabaster;
-    }
-}
-
-.news__ratio-wrapper--narrow h3 {
-  padding: 5px 0 0;
-
-  @include vp-1439 {
-    padding: 5px 0 1px;
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 0 4px;
+    width: 200px;
   }
 
   @include angle;
@@ -207,13 +233,35 @@ span.news__angle {
   @include vp-1439 {
     width: 207px;
   }
+
+  @include vp-767 {
+    width: 200px;
+  }
 }
 
 .news__ratio-wrapper--narrow .news__item h3 {
   width: 214px;
+  padding: 5px 0 0;
+
 
   @include vp-1439 {
     width: 207px;
+    padding: 5px 0 1px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+    padding: 10px 0 4px;
+  }
+
+  @include angle;
+
+  &::after {
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0;
+    background-color: $color-alabaster;
   }
 }
 
@@ -227,6 +275,11 @@ span.news__angle {
   @include vp-1439 {
     line-height: 20px;
   }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .news__ratio-wrapper--wide .news__description {
@@ -235,6 +288,10 @@ span.news__angle {
   @include vp-1439 {
     width: 240px;
   }
+
+  @include vp-767 {
+    width: 263px;
+  }
 }
 
 .news__ratio-wrapper--narrow .news__description {
@@ -242,6 +299,10 @@ span.news__angle {
 
   @include vp-1439 {
     width: 240px;
+  }
+
+  @include vp-767 {
+    width: 263px;
   }
 }
 
@@ -256,6 +317,11 @@ span.news__angle {
 
   @include vp-1439 {
     padding: 7px 0 10px;
+  }
+
+  @include vp-767 {
+    width: 263px;
+    padding: 13px 0 9px;
   }
 
   @include angle;
@@ -280,6 +346,10 @@ span.news__angle {
   justify-content: center;
   flex-shrink: 0;
   margin-right: 18px;
+
+  @include vp-767 {
+    margin-right: 10px;
+  }
 }
 
 .news__description-button svg {
@@ -322,6 +392,11 @@ span.news__angle {
     bottom: 8px;
     left: 45px;
   }
+
+  @include vp-767 {
+    bottom: 1px;
+    left: 15px;
+  }
 }
 
 .news__button--next {
@@ -337,6 +412,11 @@ span.news__angle {
     bottom: 8px;
     right: 45px;
   }
+
+  @include vp-767 {
+    bottom: 1px;
+    right: 15px;
+  }
 }
 
 .news__swiper-pagination .swiper-pagination-bullet {
@@ -349,7 +429,15 @@ span.news__angle {
   align-items: center;
   justify-content: center;
   border: none;
+
+  @include vp-767 {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
+
 .news__swiper-pagination .swiper-pagination-bullet-active {
   color: $color-default-white;
   background-color: $color-cerulean-blue;
@@ -359,6 +447,13 @@ span.news__angle {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include vp-767 {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .news__swiper-pagination {
@@ -366,6 +461,10 @@ span.news__angle {
   left: auto;
   right: auto;
   bottom: 3px;
+
+  @include vp-767 {
+    bottom: 0;
+  }
 }
 
 

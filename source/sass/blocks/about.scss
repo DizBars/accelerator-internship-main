@@ -1,5 +1,7 @@
 .about {
   padding: 118px 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 99px 45px 100px 45px;
@@ -276,6 +278,7 @@
 }
 
 .about__button {
+  background-color: $color-alabaster;
   @include vp-1439 {
     padding: 0 21px 0 30px;
   }

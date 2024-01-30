@@ -1,6 +1,8 @@
 .programs {
   padding: 120px 100px 166px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 0 0 146px 45px;
@@ -58,12 +60,26 @@
   background-color: none;
   width: 22px;
   height: 22px;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+
+  @include active {
+    opacity: 0.7;
+  }
 }
 
 .swiper-button.programs__button svg {
   stroke: $color-cerulean-blue;
   width: 8px;
   height: 8px;
+}
+
+
+.swiper-button-disabled.programs__button svg {
+  stroke: $color-mischka;
 }
 
 .programs__button--prev::after {
@@ -255,20 +271,9 @@
 }
 
 .programs__item-button {
-  background-color: $color-cerulean-blue;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
   margin-top: -3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.programs__item-button svg {
-  stroke: $color-default-white;
-}
 
 .programs__wrapper .programs__button {
   background-color: $color-alabaster;

@@ -61,6 +61,7 @@
   justify-content: space-between;
   padding: 0;
   max-width: 900px;
+  cursor: pointer;
 
   @include vp-1439 {
     font-size: 22px;
@@ -72,6 +73,17 @@
     max-width: 200px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -122,6 +134,27 @@
   border-radius: 16px;
   position: relative;
   min-height: 120px;
+  stroke: $color-default-white;
+
+  @include hover-focus {
+    stroke: $color-cerulean-blue;
+    background-color: $color-default-white;
+
+    &::after {
+      background-color: transparent;
+      border: 1px solid $color-cerulean-blue;
+    }
+  }
+
+  @include active {
+    stroke: $color-default-white;
+    color: $color-endeavour;
+
+    &::after {
+      background-color: $color-endeavour;
+      border: none;
+    }
+  }
 
   @include vp-1439 {
     padding: 36px 29px;
@@ -180,6 +213,28 @@
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   padding: 42px 39px 32px;
+  stroke: $color-cerulean-blue;
+
+  @include hover-focus {
+    stroke: $color-default-white;
+    background-color: $color-cerulean-blue;
+
+    &::after {
+      background-color: transparent;
+      border: 1px solid $color-default-white;
+    }
+  }
+
+  @include active {
+    stroke: $color-endeavour;
+    background-color: $color-endeavour;
+    color: $color-default-white;
+
+    &::after {
+      background-color: $color-default-white;
+      border: none;
+    }
+  }
 
   @include vp-1439 {
     padding: 36px 29px 25px;

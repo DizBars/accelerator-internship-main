@@ -18,12 +18,13 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: auto;
+    bottom: -30px;
+    font-size: 14px;
 
     &.is-invalid {
       color: #ff0000;
-    }
+      }
 
     &.is-valid {
       color: #15ab07;

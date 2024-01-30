@@ -1,10 +1,15 @@
 .grant {
   background-color: $color-cerulean-blue;
+}
+
+.grant__wrapper {
   color: $color-default-white;
   padding: 124px 100px 120px;
   display: flex;
   flex-direction: row;
   gap: 138px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 98px 45px 100px;

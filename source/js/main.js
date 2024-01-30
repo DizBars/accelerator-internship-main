@@ -6,6 +6,7 @@ import './modules/burger-menu';
 import {newsToggle} from './modules/news-buttons';
 import {CustomSelect} from './vendor/select/custom-select';
 import {Form} from './vendor/form-validate/form';
+import {initModal} from './modules/modal-window';
 
 window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     handleResize();
     initSliderNewsNav();
+    initModal();
   });
 });
 

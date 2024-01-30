@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 26px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 0 45px 50px;
@@ -61,6 +63,15 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-cerulean-blue;
+  }
+
+  @include active {
+    color: $color-endeavour;
+  }
 
   @include vp-767 {
     font-size: 14px;
@@ -103,6 +114,15 @@
   justify-content: center;
   align-items: center;
   fill: $color-default-white;
+
+  @include hover-focus {
+    fill: rgba(255, 255, 255, 0.7);
+  }
+
+  @include active {
+    fill: $color-default-white;
+    background-color: $color-endeavour;
+  }
 
   @include vp-767 {
     width: 26px;
@@ -152,6 +172,16 @@
   line-height: 18px;
   color: $color-charcoal;
   border-bottom: 1px solid $color-charcoal;
+
+  @include hover-focus {
+    color: $color-cerulean-blue;
+    border-color: $color-cerulean-blue;
+  }
+
+  @include active {
+    color: $color-endeavour;
+    border-color: $color-endeavour;
+  }
 
   @include vp-1439 {
     font-size: 12px;

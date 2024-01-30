@@ -1,10 +1,12 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
+  caret-color: $color-default-white;
   display: flex;
   width: 530px;
   padding: 14px 0 28px;
+  font-size: 14px;
+  line-height: 14px;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -27,8 +29,7 @@
       max-width: 300px;
       min-height: 48px;
       margin-left: auto;
-      padding: 10px;
-
+      padding: 10px 25px;
       border: 2px solid rgba(#000000, 0.2);
       border-radius: 5px;
       outline: none;
@@ -41,11 +42,11 @@
       }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid $color-default-white;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid $color-default-white;
       }
     }
   }
@@ -75,29 +76,37 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 1px solid #ff5e66;
+      background-color: rgba(255, 94, 102, 0.2);
+
+
+      &:disabled {
+        pointer-events: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid #22b259;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid rgba(#22b259, 0.5);
       }
     }
   }
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: auto;
+    bottom: -18px;
 
     &.is-invalid {
       color: #ff0000;

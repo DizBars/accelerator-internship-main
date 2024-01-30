@@ -1,24 +1,53 @@
 .button {
   display: flex;
   align-items: center;
-  padding: 0 21px 0 29px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.02em;
+
+  @include active {
+    color: rgba(255, 255, 255, 0.7);
+    background: $color-cerulean-blue;
+
+    &::after {
+      transition: $trans-default;
+      background-color: $color-default-white;
+    }
+
+    svg {
+      opacity: 0.7;
+      transform: rotate(45deg);
+      stroke: $color-cerulean-blue
+    }
+  }
+
+  &:disabled {
+    color: $color-mischka;
+    pointer-events: none;
+    border-color: $color-mischka;
+
+    &::after {
+      background-color: $color-mischka;
+    }
+  }
+}
+
+.button--primary {
   color: $color-cerulean-blue;
-  background: $color-default-white;
+  background: transparent;
   border: 1px solid #316DC2;
   border-radius: 30px;
-  cursor: pointer;
+  padding: 0 21px 0 29px;
   text-transform: uppercase;
   transition: opacity $trans-default;
   height: 54px;
   justify-content: space-between;
-  position: relative;
-  z-index: 2;
   gap: 48px;
   width: max-content;
-  letter-spacing: 0.02em;
 
   @include vp-767 {
     font-size: 12px;
@@ -26,22 +55,41 @@
     padding: 15px 15px 15px 19px;
     height: 42px;
     gap: 32px;
+    align-items: center;
   }
-}
 
-.button--primary::after {
-  content: "";
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background-color: $color-cerulean-blue;
-  right: 3px;
-  z-index: -1;
+  @include hover-focus {
+    background: $color-cerulean-blue;
+    transition: $trans-default;
+    color: $color-default-white;
 
-  @include vp-767 {
-    width: 34px;
-    height: 34px;
+    &::after {
+      transition: $trans-default;
+      background-color: $color-default-white;
+    }
+
+    svg {
+      transition: $trans-default;
+      transform: rotate(45deg);
+      stroke: $color-cerulean-blue
+    }
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: $color-cerulean-blue;
+    right: 3px;
+    z-index: -1;
+
+    @include vp-767 {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 
@@ -49,4 +97,52 @@
   stroke: $color-default-white;
 }
 
+.button--secondary {
+  background-color: $color-cerulean-blue;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
 
+  &:disabled {
+    background-color: $color-mischka;
+  }
+
+  @include hover-focus {
+    background-color: $color-default-white;
+
+    svg {
+      transition: $trans-default;
+      transform: rotate(45deg);
+      stroke: $color-cerulean-blue
+    }
+  }
+}
+
+.button--secondary svg {
+  stroke: $color-default-white;
+}
+
+.button--primary-blue {
+  border: 1px solid $color-default-white;
+  color: $color-default-white;
+
+  &::after {
+    background-color: $color-default-white;
+  }
+
+  @include hover-focus {
+    background: $color-default-white;
+    color: $color-cerulean-blue;
+
+    &::after {
+      background-color: $color-cerulean-blue;
+    }
+
+    svg {
+      transform: rotate(45deg);
+      stroke: $color-default-white
+    }
+  }
+}

@@ -5,6 +5,7 @@ const closeToggle = document.querySelector('[data-toggle="is-closed"]');
 const navList = document.querySelector('.header__nav-list');
 const buttonWrapper = document.querySelector('.js-toggle-button__wrapper');
 
+
 navToggle.addEventListener('click', () => {
   if (navHeader.classList.contains('header__nav--closed')) {
     navHeader.classList.remove('header__nav--closed');
@@ -15,7 +16,11 @@ navToggle.addEventListener('click', () => {
     buttonWrapper.style.backgroundColor = '#ffffff';
     navToggle.style.backgroundColor = '#316dc2';
     navToggle.style.color = '#ffffff';
-    navToggle.style.width = '286px';
+    if(window.innerWidth < 767) {
+      navToggle.style.width = '290px';
+    } else {
+      navToggle.style.width = '286px';
+    }
   } else {
     navHeader.classList.add('header__nav--closed');
     navHeader.classList.remove('header__nav--opened');

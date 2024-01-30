@@ -5,6 +5,8 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 99px 45px 65px;
@@ -33,6 +35,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 27px;
+    padding-right: 15px;
   }
 }
 
@@ -79,6 +82,11 @@
   border: none;
   border: 1px solid transparent;
   border-radius: 20px;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 1;
+  }
 
   @include vp-1439 {
     padding: 11px 19px;
@@ -336,26 +344,14 @@ span.news__angle {
 }
 
 .news__description-button {
-  background-color: #316dc2;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-shrink: 0;
   margin-right: 18px;
+  cursor: pointer;
 
   @include vp-767 {
     margin-right: 10px;
   }
-}
-
-.news__description-button svg {
-  stroke: $color-default-white;
-  width: 8px;
-  height: 8px;
 }
 
 .news__button--prev::after {
@@ -370,6 +366,10 @@ span.news__angle {
   stroke: $color-cerulean-blue;
   width: 8px;
   height: 8px;
+}
+
+.swiper-button-disabled.news__button svg {
+  stroke: $color-mischka;
 }
 
 .news__button--prev svg {
@@ -429,6 +429,19 @@ span.news__angle {
   align-items: center;
   justify-content: center;
   border: none;
+  opacity: 0.5;
+
+  @include hover-focus {
+    opacity: 1;
+    border-radius: 50%;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  @include active {
+    opacity: 1;
+    color: $color-default-white;
+    background-color: $color-endeavour;
+  }
 
   @include vp-767 {
     width: 26px;
@@ -447,6 +460,7 @@ span.news__angle {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
 
   @include vp-767 {
     width: 26px;
@@ -467,5 +481,14 @@ span.news__angle {
   }
 }
 
+.news__button {
+  @include hover-focus {
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
 
+  @include active {
+    opacity: 0.7;
+  }
+}
 

@@ -1,6 +1,8 @@
 .feedback {
   padding: 120px 100px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1439 {
     padding: 100px 45px;

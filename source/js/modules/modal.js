@@ -1,7 +1,7 @@
 const initModal = () => {
   const targetButton = document.querySelector('[data-modal="control"]');
   const modal = document.querySelector('#modal');
-  const invalid = document.querySelectorAll('.is-invalid');
+  const closeModalButton = document.querySelector('[data-modal="close-button"]');
 
   targetButton.addEventListener('click', () => {
     modal.showModal();
@@ -18,10 +18,10 @@ const initModal = () => {
     }
   }
 
-
-  document.addEventListener('post', () => {
-    return console.log(invalid.length);
+  closeModalButton.addEventListener('click', () => {
+    modal.close();
   });
+
 };
 
 export {initModal};

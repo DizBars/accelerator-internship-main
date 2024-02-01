@@ -6,7 +6,7 @@ import './modules/burger-menu';
 import {newsToggle} from './modules/news-buttons';
 import {CustomSelect} from './vendor/select/custom-select';
 import {Form} from './vendor/form-validate/form';
-import {initModal} from './modules/modal-window';
+import {initModal} from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();

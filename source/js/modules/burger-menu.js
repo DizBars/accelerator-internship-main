@@ -17,7 +17,7 @@ navToggle.addEventListener('click', () => {
     navToggle.style.backgroundColor = '#316dc2';
     navToggle.style.color = '#ffffff';
     if(window.innerWidth < 767) {
-      navToggle.style.width = '290px';
+      navToggle.style.width = '90.625vw';
     } else {
       navToggle.style.width = '286px';
     }

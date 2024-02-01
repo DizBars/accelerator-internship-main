@@ -1,7 +1,12 @@
+const modal = document.querySelector('#modal');
 
 const baseSuccessCallback = (event) => {
   event.preventDefault();
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
+  if(modal.hasAttribute('open') === true) {
+    modal.close();
+    document.body.classList.remove('scroll-lock');
+  }
 };
 
 const baseErrorCallback = (event) => {

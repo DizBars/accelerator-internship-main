@@ -1,8 +1,9 @@
 .header {
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 112;
   padding: 30px 100px;
   width: 100%;
+  transition: $trans-default;
 
   @include vp-1439 {
     padding: 30px 45px;
@@ -19,11 +20,20 @@
   justify-content: space-between;
 }
 
+.header__nav {
+  z-index: 2;
+}
+
+svg[data-header="logo"] {
+  z-index: 3;
+}
+
 svg[data-toggle="is-closed"] {
   stroke: $color-default-white;
 }
 
-.js-toggle-button__wrapper {
+.header__nav-toggle::after {
+  content: "";
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -33,12 +43,24 @@ svg[data-toggle="is-closed"] {
   background-color: $color-cerulean-blue;
   text-transform: uppercase;
   transition: $trans-default;
+  position: absolute;
+  right: 3px;
+  z-index: 1;
+}
+
+.header__nav--opened .header__nav-toggle::after {
+  background-color: $color-default-white;
+}
+
+.header__nav-toggle svg {
+  z-index: 2;
+  margin-right: 13px;
 }
 
 .header__nav-toggle {
   display: flex;
   align-items: center;
-  padding: 3px 3px 3px 20px;
+  padding: 16px 3px 16px 20px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -53,6 +75,19 @@ svg[data-toggle="is-closed"] {
   justify-content: space-between;
   margin-bottom: 4px;
   float:right;
+  position: relative;
+  z-index: 2;
+}
+
+.header__nav--opened .header__nav-toggle {
+  background: $color-cerulean-blue;
+  color: $color-default-white;
+  width: 286px;
+  float:right;
+
+  @include vp-767 {
+    width: 90.625vw;
+  }
 }
 
 .header__nav-list {
@@ -65,6 +100,10 @@ svg[data-toggle="is-closed"] {
   padding: 33px 25px;
   transition: $trans-default;
   gap: 24px;
+}
+
+.header__nav--opened .header__nav-list {
+  display: flex;
 }
 
 .header__nav-button {
@@ -141,4 +180,21 @@ svg[data-toggle="is-closed"] {
 
 .nav-list__item.is-active svg {
   transform: rotate(0.5turn);
+}
+
+.header__overlay {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(13, 29, 51, 0.4);
+  top: 0;
+  left: 0;
+  transition: $trans-default;
+}
+
+.header__nav--opened .header__overlay {
+  display: block;
 }

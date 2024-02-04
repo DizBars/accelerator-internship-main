@@ -1,16 +1,22 @@
 .faq {
   color: $color-cerulean-blue;
-  padding: 120px 0px;
+  padding: 3px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 117px;
+  margin-bottom: 120px;
 
   @include vp-1439 {
-    padding: 96px 45px;
+    padding: 0 45px;
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 
   @include vp-767 {
-    padding: 62px 15px;
+    padding: 2px 15px 0;
+    margin-top: 60px;
+    margin-bottom: 62px;
   }
 }
 
@@ -24,7 +30,7 @@
   @include vp-1439 {
     font-size: 34px;
     line-height: 50px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {

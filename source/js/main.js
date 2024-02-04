@@ -7,9 +7,14 @@ import {newsToggle} from './modules/news-buttons';
 import {CustomSelect} from './vendor/select/custom-select';
 import {Form} from './vendor/form-validate/form';
 import {initModal} from './modules/modal';
+import {StickyHeader} from './modules/sticky-header';
+import './modules/locomotive-scroll';
+import {initLocomotiveScroll} from './modules/init-locomotive-scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();
+  initLocomotiveScroll();
+
   window.addEventListener('load', () => {
     newsToggle();
     initAccordions();
@@ -24,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     handleResize();
     initSliderNewsNav();
     initModal();
+    const stickyHeader = new StickyHeader();
+    stickyHeader.init();
   });
 });
 

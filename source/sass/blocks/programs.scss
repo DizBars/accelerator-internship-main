@@ -1,15 +1,20 @@
 .programs {
-  padding: 120px 100px 166px;
+  padding: 0 100px 46px;
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 122px;
+  margin-bottom: 120px;
 
   @include vp-1439 {
-    padding: 0 0 146px 45px;
+    padding: 0 0 46px 45px;
+    margin-top: 0;
+    margin-bottom: 100px;
   }
 
   @include vp-767 {
-    padding: 0 15px 116px;
+    padding: 0 15px 58px;
+    margin-bottom: 58px;
   }
 }
 
@@ -48,6 +53,8 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 16px;
+    margin-top: 0;
+    padding-top: 1px;
   }
 }
 
@@ -97,12 +104,13 @@
 .programs__button--prev {
   left: auto;
   right: 132px;
-  top: 702px;
+  bottom: 0;
   width: 22px;
   height: 22px;
+  top: auto;
 
   @include vp-1439 {
-    top: 576px;
+    top: auto;
     right: 77px;
   }
 
@@ -115,18 +123,20 @@
 .programs__button--next {
   left: auto;
   right: 100px;
-  top: 702px;
+  bottom: 0;
   width: 22px;
   height: 22px;
+  top: auto;
 
   @include vp-1439 {
-    top: 576px;
+    top: auto;
     right: 45px;
   }
 
   @include vp-767 {
     right: 15px;
     top: 21px;
+    bottom: auto;
   }
 }
 
@@ -137,6 +147,7 @@
 .programs__ratio-wrapper {
   position: relative;
   z-index: 1;
+  background-color: $color-alabaster;
 
   @include vp-1439 {
     width: auto;
@@ -160,11 +171,11 @@
   height: 2px;
   background: rgb(49, 109, 194, 0.2);
   left: 7%;
-  bottom: 131px;
+  bottom: 11px;
 
   @include vp-1439 {
     max-width: 560px;
-    bottom: 111px;
+    bottom: 11px;
     left: 45px;
   }
 
@@ -279,7 +290,7 @@
   background-color: $color-alabaster;
   @include vp-767 {
     position: absolute;
-    bottom: 60px;
+    bottom: 0;
     padding: 15px 16px 15px 29px;
     gap: 42px;
   }

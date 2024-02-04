@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  height: 800px;
+
+  @include vp-1439 {
+    height: 1024px;
+  }
+
+  @include vp-767 {
+    height: 568px;
+  }
 }
 
 .hero__background {
   z-index: -10;
+  background-color: $color-alabaster;
 }
 
 .hero__background img {

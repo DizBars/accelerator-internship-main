@@ -1,15 +1,18 @@
 .reviews {
-  padding: 0 100px 182px;
+  padding: 0 100px 63px;
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  margin-bottom: 120px;
 
   @include vp-1439 {
-    padding: 0 0 162px 45px;
+    padding: 0 0 62px 45px;
+    margin-bottom: 101px;
   }
 
   @include vp-767 {
-    padding: 0 15px 59px;
+    padding: 2px 15px 0;
+    margin-bottom: 56px;
   }
 }
 
@@ -20,21 +23,21 @@
   margin: 0;
   color: $color-cerulean-blue;
   margin-bottom: 46px;
-  margin-top: 4px;
+  padding-top: 3px;
   padding-left: 3px;
 
   @include vp-1439 {
     font-size: 34px;
     line-height: 50px;
-    margin-top: 3px;
+    padding-top: 0;
     padding-left: 0;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 1px;
+    padding-top: 1px;
     margin-bottom: 31px;
   }
 }
@@ -224,12 +227,13 @@
   height: 22px;
   left: auto;
   right: 132px;
-  top: 614px;
+  bottom: 0;
+  top: auto;
 
   @include vp-1439 {
     top: auto;
     right: 77px;
-    bottom: 100px;
+    bottom: 0;
   }
 
   @include vp-767 {
@@ -244,12 +248,13 @@
   height: 22px;
   left: auto;
   right: 100px;
-  top: 614px;
+  top: auto;
+  bottom: 0;
 
   @include vp-1439 {
     top: auto;
     right: 45px;
-    bottom: 100px;
+    bottom: 0;
   }
 
   @include vp-767 {
@@ -268,12 +273,12 @@
   height: 2px;
   background: rgb(49, 109, 194, 0.2);
   left: 7%;
-  bottom: 131px;
+  bottom: 11px;
 
   @include vp-1439 {
     max-width: 560px;
     left: 45px;
-    bottom: 111px;
+    bottom: 11px;
   }
 
   @include vp-767 {

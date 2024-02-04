@@ -84,7 +84,6 @@
   padding: 11px 25px;
   text-transform: uppercase;
   opacity: 0.6;
-  border: none;
   border: 1px solid transparent;
   border-radius: 20px;
   cursor: pointer;
@@ -184,13 +183,13 @@
 
   @include angle;
 
-    &::after {
-      width: 16px;
-      height: 16px;
-      right: -16px;
-      top: 11px;
-      background-color: $color-alabaster;
-    }
+  &::after {
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    top: 11px;
+    background-color: $color-alabaster;
+  }
 }
 
 span.news__angle {
@@ -198,13 +197,13 @@ span.news__angle {
 
   @include angle;
 
-    &::after {
-      width: 16px;
-      height: 16px;
-      left: 0;
-      top: -1px;
-      background-color: $color-alabaster;
-    }
+  &::after {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: -1px;
+    background-color: $color-alabaster;
+  }
 }
 
 .news__item h3 {
@@ -232,13 +231,13 @@ span.news__angle {
 
   @include angle;
 
-    &::after {
-      width: 16px;
-      height: 16px;
-      right: -16px;
-      bottom: 0;
-      background-color: $color-alabaster;
-    }
+  &::after {
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0;
+    background-color: $color-alabaster;
+  }
 }
 
 .news__ratio-wrapper--wide .news__item h3 {
@@ -340,13 +339,13 @@ span.news__angle {
 
   @include angle;
 
-    &::after {
-      width: 16px;
-      height: 16px;
-      right: -16px;
-      bottom: 0;
-      background-color: $color-alabaster;
-    }
+  &::after {
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0;
+    background-color: $color-alabaster;
+  }
 }
 
 .news__description-button {

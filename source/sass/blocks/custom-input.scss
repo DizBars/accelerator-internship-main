@@ -8,7 +8,7 @@
   font-size: 14px;
   line-height: 14px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (width <= 767px) {
     padding: 4px 0 48px;
     width: 100%;
   }
@@ -18,7 +18,7 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (width <= 767px) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -36,7 +36,7 @@
 
       transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (width <= 767px) {
         max-width: unset;
         width: 100%;
       }
@@ -52,8 +52,8 @@
   }
 
   &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
+    @media screen and (width <= 767px) {
+      margin: 0 0 18px;
     }
   }
 
@@ -68,7 +68,7 @@
 
     transition: opacity 0.3s ease;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (width <= 767px) {
       bottom: 20px;
     }
   }
@@ -103,6 +103,7 @@
       }
     }
   }
+
   .input-message {
     position: absolute;
     right: auto;

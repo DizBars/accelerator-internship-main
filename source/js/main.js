@@ -8,12 +8,9 @@ import {CustomSelect} from './vendor/select/custom-select';
 import {Form} from './vendor/form-validate/form';
 import {initModal} from './modules/modal';
 import {StickyHeader} from './modules/sticky-header';
-import './modules/locomotive-scroll';
-import {initLocomotiveScroll} from './modules/init-locomotive-scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();
-  initLocomotiveScroll();
 
   window.addEventListener('load', () => {
     newsToggle();

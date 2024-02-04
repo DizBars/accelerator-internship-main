@@ -239,7 +239,7 @@
   @include vp-1440 {
     min-height: 132px;
     gap: 9px;
-    padding: 25px 59px 0 59px;
+    padding: 25px 59px 0;
   }
 }
 
@@ -286,6 +286,7 @@
 
 .about__button {
   background-color: $color-alabaster;
+
   @include vp-1439 {
     padding: 0 21px 0 30px;
   }

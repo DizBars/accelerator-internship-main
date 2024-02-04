@@ -83,12 +83,12 @@
   width: 968px;
   background-color: $color-default-white;
   border-radius: 0 30px 30px 0;
-  padding: 40px 50px 30px 50px;
+  padding: 40px 50px 30px;
   margin: 0;
   display: block;
 
   @include vp-1439 {
-    padding: 31px 40px 23px 40px;
+    padding: 31px 40px 23px;
     width: 659px;
     font-size: 36px;
     line-height: 44px;
@@ -148,7 +148,7 @@
     line-height: 20px;
     background-color: $color-default-white;
     padding: 0 14px 10px;
-    border-radius: 0 0 14px 0;
+    border-radius: 0 0 14px;
     margin-top: -5px;
   }
 }
@@ -172,7 +172,7 @@
     flex-direction: column;
     gap: 0;
     padding: 0;
-    background-color: transparent
+    background-color: transparent;
   }
 
   @include angle;

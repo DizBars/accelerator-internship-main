@@ -1,13 +1,11 @@
 .modal {
   position: fixed;
-  top: 0;
   background-color: $color-default-white;
   z-index: 10;
   border: none;
   max-width: 510px;
   min-height: 611px;
   border-radius: 16px;
-  top: 0;
   margin: 0 auto;
   top: 90px;
 
@@ -94,7 +92,7 @@
 }
 
 .modal__form label input,
-.custom-select__button {
+.modal__form .custom-select__button {
   border: 1px solid rgba(72, 72, 72, 0.3);
 
   @include hover-focus {

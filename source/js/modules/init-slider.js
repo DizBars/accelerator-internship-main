@@ -14,7 +14,7 @@ const setSliderHero = () => new Swiper(heroSlider, {
   },
   loop: true,
   autoplay: {
-    delay: 300000,
+    delay: 3000,
   },
   breakpoints: {
     1440: {

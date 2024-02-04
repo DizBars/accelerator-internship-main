@@ -8,16 +8,16 @@
   width: 500px;
   padding: 14px 0 10px 36px;
 
-  @media screen and (max-width: 767px) {
-    padding: 14px 0 10px 0;
+  @media screen and (width <= 767px) {
+    padding: 14px 0 10px;
     width: 100%;
   }
 
   &:last-of-type {
     padding: 14px 0 58px 36px;
 
-    @media screen and (max-width: 767px) {
-      padding: 14px 0 58px 0;
+    @media screen and (width <= 767px) {
+      padding: 14px 0 58px;
     }
   }
 

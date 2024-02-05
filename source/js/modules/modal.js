@@ -6,7 +6,7 @@ const initModal = () => {
   targetButtons.forEach((button) => {
     button.addEventListener('click', () => {
       modal.showModal();
-      document.body.classList.add('scroll-lock');
+      window.scrollLock.disableScrolling();
     });
   });
 
@@ -16,13 +16,13 @@ const initModal = () => {
     const isClickedOnBackDrop = target === modal;
     if (isClickedOnBackDrop) {
       modal.close();
-      document.body.classList.remove('scroll-lock');
+      window.scrollLock.enableScrolling();
     }
   }
 
   closeModalButton.addEventListener('click', () => {
     modal.close();
-    document.body.classList.remove('scroll-lock');
+    window.scrollLock.enableScrolling();
   });
 
 };

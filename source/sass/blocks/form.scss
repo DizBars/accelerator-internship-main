@@ -23,7 +23,8 @@
   }
 }
 
-.form label {
+.form label,
+.form .custom-textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -50,7 +51,7 @@
   }
 }
 
-.form label textarea {
+.form .custom-textarea textarea {
   margin: 0;
   border: 1px solid rgb(255, 255, 255, 0.3);
   background-color: transparent;
@@ -59,6 +60,25 @@
   min-height: 98px;
   border-radius: 8px;
   color: $color-default-white;
+  flex-grow: 1;
+  margin-left: auto;
+  padding: 10px 25px;
+  outline: none;
+
+  transition: border 0.3s ease;
+
+  @media screen and (width <= 767px) {
+    max-width: unset;
+    width: 100%;
+  }
+
+  &:hover {
+    border: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+  }
 
   @include vp-1439 {
     max-width: 352px;

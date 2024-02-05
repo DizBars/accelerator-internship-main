@@ -24,11 +24,11 @@
   z-index: 2;
 }
 
-svg[data-header="logo"] {
+[data-header="logo"] {
   z-index: 3;
 }
 
-svg[data-toggle="is-closed"] {
+[data-toggle="is-closed"] {
   stroke: $color-default-white;
 }
 
@@ -86,7 +86,7 @@ svg[data-toggle="is-closed"] {
   float: right;
 
   @include vp-767 {
-    width: 90.625vw;
+    width: 90.63vw;
   }
 }
 
@@ -106,7 +106,7 @@ svg[data-toggle="is-closed"] {
   display: flex;
 }
 
-.header__nav-button {
+.nav-list__button {
   border: none;
   background-color: transparent;
   color: $color-default-white;
@@ -131,7 +131,7 @@ svg[data-toggle="is-closed"] {
   }
 }
 
-.header__nav__nested-button {
+.nav-list__nested-button {
   border: none;
   background-color: transparent;
   color: $color-default-white;
@@ -151,7 +151,7 @@ svg[data-toggle="is-closed"] {
   }
 }
 
-.header__nav__nested-list {
+.nav-list__nested-list {
   margin: 0;
   padding: 0;
   padding-left: 16px;
@@ -162,16 +162,13 @@ svg[data-toggle="is-closed"] {
   gap: 4px;
 }
 
-.nav-list__item.is-active .header__nav-button {
-  margin-bottom: 12px;
-}
-
 .nav-list__item.is-active {
   margin-bottom: -4px;
 }
 
-.nav-list__item.is-active .header__nav-button {
+.nav-list__item.is-active .nav-list__button {
   opacity: 1;
+  margin-bottom: 12px;
 }
 
 .nav-list__item svg {

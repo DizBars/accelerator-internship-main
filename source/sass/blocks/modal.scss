@@ -120,7 +120,7 @@
   }
 }
 
-.modal__form .custom-toggle input:checked + .custom-toggle__icon {
+.modal__form input:checked + .custom-toggle__icon {
   border: 1px solid $color-charcoal;
 }
 

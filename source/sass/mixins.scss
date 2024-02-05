@@ -13,7 +13,9 @@
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  outline: none;
+
+  &:focus(.focus-visible) {
     @content;
   }
 }
@@ -32,12 +34,10 @@
     }
   }
 
-  &.focus-visible:focus {
+  &:focus(.focus-visible) {
     @content;
   }
 }
-
-// Desktop first
 
 @mixin vp-1440 {
   @media (min-width: ($vp-1440)) {

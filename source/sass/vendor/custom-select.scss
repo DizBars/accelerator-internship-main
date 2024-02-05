@@ -114,8 +114,11 @@
     padding: 17px 20px;
     outline: none;
     cursor: pointer;
-
     transition: background-color 0.3s ease;
+
+    &:focus {
+      background-color: $color-cerulean-blue;
+    }
 
     &[aria-selected="true"] {
       background-color: $color-cerulean-blue;

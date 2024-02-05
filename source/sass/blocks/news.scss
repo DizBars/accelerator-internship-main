@@ -496,3 +496,12 @@
     opacity: 0.7;
   }
 }
+
+
+.news__description .button span {
+  position: absolute;
+
+  &::after {
+    display: none;
+  }
+}

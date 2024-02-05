@@ -176,6 +176,14 @@
   }
 }
 
+.custom-toggle input {
+  &:focus-visible {
+    + span {
+      border: 1px solid $color-default-white;
+    }
+  }
+}
+
 .custom-toggle input:checked + .custom-toggle__icon {
   background-color: $color-default-white;
   border: 1px solid rgb(255, 255, 255);

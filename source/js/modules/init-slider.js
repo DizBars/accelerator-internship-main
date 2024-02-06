@@ -7,21 +7,34 @@ const reviewsSlider = document.querySelector('.reviews__swiper');
 const newsNav = document.querySelector('.news__nav');
 let setSliderNewsNav;
 
-const setSliderHero = () => new Swiper(heroSlider, {
-  pagination: {
-    el: '.hero__swiper-pagination',
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 3000,
-  },
-  breakpoints: {
-    1440: {
-      allowTouchMove: false,
+const setSliderHero = () => {
+  const slider = new Swiper(heroSlider, {
+    pagination: {
+      el: '.swiper-slide-active .hero__swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+      bulletElement: 'div',
+      bulletClass: 'swiper-pagination-bullet',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
     },
-  },
-});
+    autoplay: {
+      delay: 3000,
+    },
+    loop: true,
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+      },
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        slider.pagination.init();
+        slider.pagination.render();
+        slider.pagination.update();
+      }
+    }
+  });
+};
 
 const initSliderHero = () => {
   if (document.body.contains(heroSlider)) {

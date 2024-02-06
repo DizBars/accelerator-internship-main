@@ -40,21 +40,21 @@
 .hero__item {
   position: absolute;
   z-index: 3;
-  top: 447px;
+  bottom: 60px;
   left: 100px;
 
   @include vp-1439 {
-    top: 691px;
+    bottom: 60px;
     left: 45px;
   }
 
   @include vp-767 {
-    top: 241px;
+    bottom: 20px;
     left: 15px;
   }
 }
 
-.hero__item-wrapper {
+.hero__button-wrapper {
   @include vp-767 {
     background-color: $color-default-white;
     width: fit-content;
@@ -73,6 +73,10 @@
       top: 0;
     }
   }
+}
+
+.hero__item-wrapper {
+  position: relative;
 }
 
 .hero__item h2 {
@@ -220,8 +224,8 @@
 .hero__swiper-pagination {
   position: absolute;
   z-index: 3;
-  left: 100px;
-  bottom: 353px;
+  left: 0;
+  top: -38px;
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -230,14 +234,14 @@
   border-radius: 20px 20px 0 0;
 
   @include vp-1439 {
-    left: 45px;
-    bottom: 333px;
+    left: 0;
+    top: -38px;
   }
 
   @include vp-767 {
     border-radius: 12px 12px 0 0;
-    bottom: 327px;
-    left: 15px;
+    left: 0;
+    top: -28px;
     padding: 10px 16px;
   }
 }

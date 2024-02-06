@@ -394,12 +394,12 @@
 
   @include vp-1439 {
     top: auto;
-    bottom: 8px;
+    bottom: 4px;
     left: 45px;
   }
 
   @include vp-767 {
-    bottom: 1px;
+    bottom: 2px;
     left: 15px;
   }
 }
@@ -414,12 +414,12 @@
 
   @include vp-1439 {
     top: auto;
-    bottom: 8px;
+    bottom: 4px;
     right: 45px;
   }
 
   @include vp-767 {
-    bottom: 1px;
+    bottom: 2px;
     right: 15px;
   }
 }
@@ -481,8 +481,13 @@
   right: auto;
   bottom: 3px;
 
+  @include vp-1439 {
+    bottom: -2px;
+  }
+
   @include vp-767 {
     bottom: 0;
+    gap: 21px;
   }
 }
 

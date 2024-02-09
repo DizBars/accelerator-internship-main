@@ -17,11 +17,11 @@ jobs:
         with:
           node-version: 18.16.0
 
-      - name: Instal deps
-        run: npm i
-
       - name: Instal sharp
         run: npm install --force @img/sharp-win32-x64
+
+      - name: Instal deps
+        run: npm install
 
       - name: Run build
         run: npm run build

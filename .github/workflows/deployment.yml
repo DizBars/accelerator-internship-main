@@ -20,6 +20,9 @@ jobs:
       - name: Instal deps
         run: npm i
 
+      - name: Instal sharp
+        run: npm install --force @img/sharp-win32-x64
+
       - name: Run build
         run: npm run build
 

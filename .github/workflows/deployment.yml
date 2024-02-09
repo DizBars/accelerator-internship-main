@@ -9,22 +9,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get repository code
+      - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v4.0.1
         with:
-          node-version: 18.16.0
+          node-version: 20.11.0
 
-      - name: Instal sharp
-        run: npm install --force @img/sharp-win32-x64
-
-      - name: Instal deps
-        run: npm install
-
-      - name: Run build
-        run: npm run build
+      - name: Install dependencies and build
+        run: npm i && npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.5.0
@@ -32,3 +28,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           folder: ./dist
           branch: gh-pages
+

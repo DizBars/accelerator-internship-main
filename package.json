@@ -46,7 +46,6 @@
     "w3c-html-validator": "1.6.1"
   },
   "dependencies": {
-    "@img/sharp-win32-x64": "^0.33.2",
     "swiper": "11.0.5"
   }
 }
